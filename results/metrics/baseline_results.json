@@ -1,0 +1,2354 @@
+{
+  "rf": {
+    "folds": {
+      "severity": [
+        {
+          "accuracy": 0.8487,
+          "macro_f1": 0.7084,
+          "macro_auroc": 0.9577,
+          "macro_auprc": 0.8084,
+          "per_class": {
+            "none": {
+              "auroc": 0.9796,
+              "auprc": 0.9803
+            },
+            "Minor": {
+              "auroc": 0.9662,
+              "auprc": 0.642
+            },
+            "Moderate": {
+              "auroc": 0.9422,
+              "auprc": 0.8963
+            },
+            "Major": {
+              "auroc": 0.9429,
+              "auprc": 0.7152
+            }
+          }
+        },
+        {
+          "accuracy": 0.8473,
+          "macro_f1": 0.7072,
+          "macro_auroc": 0.9572,
+          "macro_auprc": 0.8079,
+          "per_class": {
+            "none": {
+              "auroc": 0.9797,
+              "auprc": 0.9804
+            },
+            "Minor": {
+              "auroc": 0.9646,
+              "auprc": 0.6375
+            },
+            "Moderate": {
+              "auroc": 0.9423,
+              "auprc": 0.8966
+            },
+            "Major": {
+              "auroc": 0.9421,
+              "auprc": 0.7172
+            }
+          }
+        },
+        {
+          "accuracy": 0.8476,
+          "macro_f1": 0.7044,
+          "macro_auroc": 0.9567,
+          "macro_auprc": 0.8053,
+          "per_class": {
+            "none": {
+              "auroc": 0.9798,
+              "auprc": 0.9801
+            },
+            "Minor": {
+              "auroc": 0.961,
+              "auprc": 0.6262
+            },
+            "Moderate": {
+              "auroc": 0.9421,
+              "auprc": 0.8966
+            },
+            "Major": {
+              "auroc": 0.9439,
+              "auprc": 0.7182
+            }
+          }
+        },
+        {
+          "accuracy": 0.8477,
+          "macro_f1": 0.705,
+          "macro_auroc": 0.9581,
+          "macro_auprc": 0.8058,
+          "per_class": {
+            "none": {
+              "auroc": 0.9797,
+              "auprc": 0.9801
+            },
+            "Minor": {
+              "auroc": 0.9682,
+              "auprc": 0.6335
+            },
+            "Moderate": {
+              "auroc": 0.9418,
+              "auprc": 0.8961
+            },
+            "Major": {
+              "auroc": 0.9427,
+              "auprc": 0.7134
+            }
+          }
+        },
+        {
+          "accuracy": 0.8475,
+          "macro_f1": 0.7062,
+          "macro_auroc": 0.9574,
+          "macro_auprc": 0.8084,
+          "per_class": {
+            "none": {
+              "auroc": 0.9793,
+              "auprc": 0.98
+            },
+            "Minor": {
+              "auroc": 0.9649,
+              "auprc": 0.6423
+            },
+            "Moderate": {
+              "auroc": 0.9421,
+              "auprc": 0.8963
+            },
+            "Major": {
+              "auroc": 0.9433,
+              "auprc": 0.7151
+            }
+          }
+        }
+      ],
+      "mechanism": [
+        {
+          "macro_auroc": 0.957,
+          "per_mechanism": {
+            "cyp_induction": {
+              "auroc": 0.9321,
+              "auprc": 0.6589,
+              "precision": 0.598,
+              "recall": 0.6565,
+              "f1": 0.6259,
+              "specificity": 0.9561,
+              "threshold": 0.3,
+              "support": 1176
+            },
+            "cyp_inhibition": {
+              "auroc": 0.9489,
+              "auprc": 0.7872,
+              "precision": 0.7395,
+              "recall": 0.7312,
+              "f1": 0.7353,
+              "specificity": 0.9519,
+              "threshold": 0.45,
+              "support": 2046
+            },
+            "qt_prolongation": {
+              "auroc": 0.9658,
+              "auprc": 0.5245,
+              "precision": 0.4,
+              "recall": 0.5455,
+              "f1": 0.4615,
+              "specificity": 0.9993,
+              "threshold": 0.15,
+              "support": 11
+            },
+            "additive_toxicity": {
+              "auroc": 0.9313,
+              "auprc": 0.7709,
+              "precision": 0.6649,
+              "recall": 0.7624,
+              "f1": 0.7103,
+              "specificity": 0.9078,
+              "threshold": 0.35,
+              "support": 2517
+            },
+            "absorption_interference": {
+              "auroc": 0.9774,
+              "auprc": 0.7209,
+              "precision": 0.7111,
+              "recall": 0.7059,
+              "f1": 0.7085,
+              "specificity": 0.997,
+              "threshold": 0.35,
+              "support": 136
+            },
+            "protein_binding": {
+              "auroc": 0.9796,
+              "auprc": 0.9327,
+              "precision": 0.8889,
+              "recall": 0.8889,
+              "f1": 0.8889,
+              "specificity": 0.9998,
+              "threshold": 0.25,
+              "support": 27
+            },
+            "excretion": {
+              "auroc": 0.9639,
+              "auprc": 0.2561,
+              "precision": 0.2586,
+              "recall": 0.4688,
+              "f1": 0.3333,
+              "specificity": 0.9967,
+              "threshold": 0.1,
+              "support": 32
+            }
+          }
+        },
+        {
+          "macro_auroc": 0.9474,
+          "per_mechanism": {
+            "cyp_induction": {
+              "auroc": 0.9306,
+              "auprc": 0.656,
+              "precision": 0.681,
+              "recall": 0.5808,
+              "f1": 0.6269,
+              "specificity": 0.9729,
+              "threshold": 0.4,
+              "support": 1176
+            },
+            "cyp_inhibition": {
+              "auroc": 0.9497,
+              "auprc": 0.7908,
+              "precision": 0.7425,
+              "recall": 0.7243,
+              "f1": 0.7333,
+              "specificity": 0.9531,
+              "threshold": 0.45,
+              "support": 2046
+            },
+            "qt_prolongation": {
+              "auroc": 0.933,
+              "auprc": 0.4669,
+              "precision": 0.4286,
+              "recall": 0.5455,
+              "f1": 0.48,
+              "specificity": 0.9994,
+              "threshold": 0.2,
+              "support": 11
+            },
+            "additive_toxicity": {
+              "auroc": 0.9327,
+              "auprc": 0.7734,
+              "precision": 0.6637,
+              "recall": 0.7652,
+              "f1": 0.7108,
+              "specificity": 0.9069,
+              "threshold": 0.35,
+              "support": 2517
+            },
+            "absorption_interference": {
+              "auroc": 0.9805,
+              "auprc": 0.7237,
+              "precision": 0.6901,
+              "recall": 0.7206,
+              "f1": 0.705,
+              "specificity": 0.9966,
+              "threshold": 0.3,
+              "support": 136
+            },
+            "protein_binding": {
+              "auroc": 0.9701,
+              "auprc": 0.9472,
+              "precision": 0.8929,
+              "recall": 0.9259,
+              "f1": 0.9091,
+              "specificity": 0.9998,
+              "threshold": 0.3,
+              "support": 27
+            },
+            "excretion": {
+              "auroc": 0.9355,
+              "auprc": 0.2493,
+              "precision": 0.1831,
+              "recall": 0.4062,
+              "f1": 0.2524,
+              "specificity": 0.9955,
+              "threshold": 0.1,
+              "support": 32
+            }
+          }
+        },
+        {
+          "macro_auroc": 0.9605,
+          "per_mechanism": {
+            "cyp_induction": {
+              "auroc": 0.9329,
+              "auprc": 0.6591,
+              "precision": 0.6126,
+              "recall": 0.6616,
+              "f1": 0.6361,
+              "specificity": 0.9584,
+              "threshold": 0.3,
+              "support": 1176
+            },
+            "cyp_inhibition": {
+              "auroc": 0.9492,
+              "auprc": 0.7896,
+              "precision": 0.7245,
+              "recall": 0.7674,
+              "f1": 0.7453,
+              "specificity": 0.9455,
+              "threshold": 0.4,
+              "support": 2046
+            },
+            "qt_prolongation": {
+              "auroc": 0.9954,
+              "auprc": 0.5315,
+              "precision": 0.5455,
+              "recall": 0.5455,
+              "f1": 0.5455,
+              "specificity": 0.9996,
+              "threshold": 0.3,
+              "support": 11
+            },
+            "additive_toxicity": {
+              "auroc": 0.9322,
+              "auprc": 0.774,
+              "precision": 0.6607,
+              "recall": 0.758,
+              "f1": 0.706,
+              "specificity": 0.9065,
+              "threshold": 0.35,
+              "support": 2517
+            },
+            "absorption_interference": {
+              "auroc": 0.9826,
+              "auprc": 0.706,
+              "precision": 0.6471,
+              "recall": 0.7279,
+              "f1": 0.6851,
+              "specificity": 0.9958,
+              "threshold": 0.3,
+              "support": 136
+            },
+            "protein_binding": {
+              "auroc": 0.9754,
+              "auprc": 0.9363,
+              "precision": 0.8846,
+              "recall": 0.8519,
+              "f1": 0.8679,
+              "specificity": 0.9998,
+              "threshold": 0.3,
+              "support": 27
+            },
+            "excretion": {
+              "auroc": 0.9561,
+              "auprc": 0.2674,
+              "precision": 0.1339,
+              "recall": 0.5312,
+              "f1": 0.2138,
+              "specificity": 0.9915,
+              "threshold": 0.05,
+              "support": 32
+            }
+          }
+        },
+        {
+          "macro_auroc": 0.9513,
+          "per_mechanism": {
+            "cyp_induction": {
+              "auroc": 0.93,
+              "auprc": 0.6552,
+              "precision": 0.6157,
+              "recall": 0.665,
+              "f1": 0.6394,
+              "specificity": 0.9587,
+              "threshold": 0.3,
+              "support": 1176
+            },
+            "cyp_inhibition": {
+              "auroc": 0.9494,
+              "auprc": 0.7879,
+              "precision": 0.7381,
+              "recall": 0.7341,
+              "f1": 0.7361,
+              "specificity": 0.9514,
+              "threshold": 0.45,
+              "support": 2046
+            },
+            "qt_prolongation": {
+              "auroc": 0.9097,
+              "auprc": 0.4967,
+              "precision": 0.4286,
+              "recall": 0.5455,
+              "f1": 0.48,
+              "specificity": 0.9994,
+              "threshold": 0.25,
+              "support": 11
+            },
+            "additive_toxicity": {
+              "auroc": 0.9322,
+              "auprc": 0.7721,
+              "precision": 0.6952,
+              "recall": 0.7239,
+              "f1": 0.7092,
+              "specificity": 0.9238,
+              "threshold": 0.4,
+              "support": 2517
+            },
+            "absorption_interference": {
+              "auroc": 0.9768,
+              "auprc": 0.7075,
+              "precision": 0.6739,
+              "recall": 0.6838,
+              "f1": 0.6788,
+              "specificity": 0.9965,
+              "threshold": 0.35,
+              "support": 136
+            },
+            "protein_binding": {
+              "auroc": 0.9978,
+              "auprc": 0.9206,
+              "precision": 0.9167,
+              "recall": 0.8148,
+              "f1": 0.8627,
+              "specificity": 0.9998,
+              "threshold": 0.35,
+              "support": 27
+            },
+            "excretion": {
+              "auroc": 0.9633,
+              "auprc": 0.2911,
+              "precision": 0.3333,
+              "recall": 0.4062,
+              "f1": 0.3662,
+              "specificity": 0.998,
+              "threshold": 0.15,
+              "support": 32
+            }
+          }
+        },
+        {
+          "macro_auroc": 0.9518,
+          "per_mechanism": {
+            "cyp_induction": {
+              "auroc": 0.9319,
+              "auprc": 0.6601,
+              "precision": 0.6245,
+              "recall": 0.6548,
+              "f1": 0.6393,
+              "specificity": 0.9608,
+              "threshold": 0.3,
+              "support": 1176
+            },
+            "cyp_inhibition": {
+              "auroc": 0.949,
+              "auprc": 0.7881,
+              "precision": 0.7177,
+              "recall": 0.783,
+              "f1": 0.7489,
+              "specificity": 0.9425,
+              "threshold": 0.4,
+              "support": 2046
+            },
+            "qt_prolongation": {
+              "auroc": 0.9386,
+              "auprc": 0.4935,
+              "precision": 0.3158,
+              "recall": 0.5455,
+              "f1": 0.4,
+              "specificity": 0.999,
+              "threshold": 0.15,
+              "support": 11
+            },
+            "additive_toxicity": {
+              "auroc": 0.9323,
+              "auprc": 0.7744,
+              "precision": 0.6962,
+              "recall": 0.7211,
+              "f1": 0.7084,
+              "specificity": 0.9245,
+              "threshold": 0.4,
+              "support": 2517
+            },
+            "absorption_interference": {
+              "auroc": 0.9818,
+              "auprc": 0.7219,
+              "precision": 0.6788,
+              "recall": 0.6838,
+              "f1": 0.6813,
+              "specificity": 0.9966,
+              "threshold": 0.35,
+              "support": 136
+            },
+            "protein_binding": {
+              "auroc": 0.9904,
+              "auprc": 0.9037,
+              "precision": 0.8571,
+              "recall": 0.8889,
+              "f1": 0.8727,
+              "specificity": 0.9997,
+              "threshold": 0.15,
+              "support": 27
+            },
+            "excretion": {
+              "auroc": 0.9384,
+              "auprc": 0.2277,
+              "precision": 0.3571,
+              "recall": 0.3125,
+              "f1": 0.3333,
+              "specificity": 0.9986,
+              "threshold": 0.2,
+              "support": 32
+            }
+          }
+        }
+      ]
+    },
+    "severity": {
+      "accuracy": {
+        "mean": 0.8478,
+        "std": 0.0005
+      },
+      "macro_f1": {
+        "mean": 0.7062,
+        "std": 0.0014
+      },
+      "macro_auroc": {
+        "mean": 0.9574,
+        "std": 0.0005
+      },
+      "macro_auprc": {
+        "mean": 0.8072,
+        "std": 0.0013
+      }
+    },
+    "severity_per_class": {
+      "none": {
+        "auroc": {
+          "mean": 0.9796,
+          "std": 0.0002
+        },
+        "auprc": {
+          "mean": 0.9802,
+          "std": 0.0001
+        }
+      },
+      "Minor": {
+        "auroc": {
+          "mean": 0.965,
+          "std": 0.0024
+        },
+        "auprc": {
+          "mean": 0.6363,
+          "std": 0.006
+        }
+      },
+      "Moderate": {
+        "auroc": {
+          "mean": 0.9421,
+          "std": 0.0002
+        },
+        "auprc": {
+          "mean": 0.8964,
+          "std": 0.0002
+        }
+      },
+      "Major": {
+        "auroc": {
+          "mean": 0.943,
+          "std": 0.0006
+        },
+        "auprc": {
+          "mean": 0.7158,
+          "std": 0.0017
+        }
+      }
+    },
+    "mechanism": {
+      "mech_macro_auroc": {
+        "mean": 0.9536,
+        "std": 0.0046
+      }
+    },
+    "ensemble": {
+      "accuracy": 0.8488,
+      "macro_f1": 0.7074,
+      "macro_auroc": 0.9594,
+      "macro_auprc": 0.8134,
+      "severity_per_class": {
+        "none": {
+          "precision": 0.9137,
+          "sensitivity": 0.9419,
+          "specificity": 0.9111,
+          "f1": 0.9276,
+          "support": 6501
+        },
+        "Minor": {
+          "precision": 0.8583,
+          "sensitivity": 0.3411,
+          "specificity": 0.9987,
+          "f1": 0.4882,
+          "support": 302
+        },
+        "Moderate": {
+          "precision": 0.7791,
+          "sensitivity": 0.8728,
+          "specificity": 0.8609,
+          "f1": 0.8233,
+          "support": 4679
+        },
+        "Major": {
+          "precision": 0.7732,
+          "sensitivity": 0.4776,
+          "specificity": 0.9814,
+          "f1": 0.5905,
+          "support": 1520
+        }
+      },
+      "severity_curves": {
+        "none": {
+          "auroc": 0.98,
+          "auprc": 0.9806
+        },
+        "Minor": {
+          "auroc": 0.9699,
+          "auprc": 0.6531
+        },
+        "Moderate": {
+          "auroc": 0.9432,
+          "auprc": 0.8986
+        },
+        "Major": {
+          "auroc": 0.9447,
+          "auprc": 0.7213
+        }
+      },
+      "confusion_matrix": [
+        [
+          6123,
+          5,
+          339,
+          34
+        ],
+        [
+          25,
+          103,
+          154,
+          20
+        ],
+        [
+          427,
+          9,
+          4084,
+          159
+        ],
+        [
+          126,
+          3,
+          665,
+          726
+        ]
+      ],
+      "calibration": {
+        "bins": [
+          {
+            "bin": 3,
+            "lower": 0.30000000000000004,
+            "upper": 0.4,
+            "n": 52,
+            "confidence": 0.3746,
+            "accuracy": 0.5192
+          },
+          {
+            "bin": 4,
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 398,
+            "confidence": 0.4675,
+            "accuracy": 0.407
+          },
+          {
+            "bin": 5,
+            "lower": 0.5,
+            "upper": 0.6000000000000001,
+            "n": 1357,
+            "confidence": 0.5506,
+            "accuracy": 0.5527
+          },
+          {
+            "bin": 6,
+            "lower": 0.6000000000000001,
+            "upper": 0.7000000000000001,
+            "n": 1391,
+            "confidence": 0.6504,
+            "accuracy": 0.6794
+          },
+          {
+            "bin": 7,
+            "lower": 0.7000000000000001,
+            "upper": 0.8,
+            "n": 1505,
+            "confidence": 0.7511,
+            "accuracy": 0.7947
+          },
+          {
+            "bin": 8,
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 1739,
+            "confidence": 0.8511,
+            "accuracy": 0.8821
+          },
+          {
+            "bin": 9,
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 6560,
+            "confidence": 0.9753,
+            "accuracy": 0.979
+          }
+        ],
+        "ece": 0.0168,
+        "n_total": 13002
+      },
+      "mechanism": {
+        "cyp_induction": {
+          "auroc": 0.9337,
+          "auprc": 0.6624,
+          "precision": 0.657,
+          "recall": 0.6156,
+          "f1": 0.6356,
+          "specificity": 0.968,
+          "threshold": 0.35,
+          "support": 1176
+        },
+        "cyp_inhibition": {
+          "auroc": 0.95,
+          "auprc": 0.7914,
+          "precision": 0.7225,
+          "recall": 0.7674,
+          "f1": 0.7443,
+          "specificity": 0.945,
+          "threshold": 0.4,
+          "support": 2046
+        },
+        "qt_prolongation": {
+          "auroc": 0.9732,
+          "auprc": 0.5351,
+          "precision": 0.625,
+          "recall": 0.4545,
+          "f1": 0.5263,
+          "specificity": 0.9998,
+          "threshold": 0.4,
+          "support": 11
+        },
+        "additive_toxicity": {
+          "auroc": 0.9334,
+          "auprc": 0.7759,
+          "precision": 0.6683,
+          "recall": 0.7636,
+          "f1": 0.7128,
+          "specificity": 0.909,
+          "threshold": 0.35,
+          "support": 2517
+        },
+        "absorption_interference": {
+          "auroc": 0.982,
+          "auprc": 0.7261,
+          "precision": 0.6978,
+          "recall": 0.7132,
+          "f1": 0.7055,
+          "specificity": 0.9967,
+          "threshold": 0.35,
+          "support": 136
+        },
+        "protein_binding": {
+          "auroc": 0.9894,
+          "auprc": 0.9399,
+          "precision": 0.8966,
+          "recall": 0.963,
+          "f1": 0.9286,
+          "specificity": 0.9998,
+          "threshold": 0.25,
+          "support": 27
+        },
+        "excretion": {
+          "auroc": 0.959,
+          "auprc": 0.293,
+          "precision": 0.2281,
+          "recall": 0.4062,
+          "f1": 0.2921,
+          "specificity": 0.9966,
+          "threshold": 0.1,
+          "support": 32
+        }
+      },
+      "mech_macro_auroc": 0.9601
+    }
+  },
+  "mlp": {
+    "folds": {
+      "severity": [
+        {
+          "accuracy": 0.9379,
+          "macro_f1": 0.8637,
+          "macro_auroc": 0.9829,
+          "macro_auprc": 0.9063,
+          "per_class": {
+            "none": {
+              "auroc": 0.9969,
+              "auprc": 0.9973
+            },
+            "Minor": {
+              "auroc": 0.9667,
+              "auprc": 0.7464
+            },
+            "Moderate": {
+              "auroc": 0.9847,
+              "auprc": 0.9675
+            },
+            "Major": {
+              "auroc": 0.9834,
+              "auprc": 0.9139
+            }
+          }
+        },
+        {
+          "accuracy": 0.9334,
+          "macro_f1": 0.8574,
+          "macro_auroc": 0.9844,
+          "macro_auprc": 0.9074,
+          "per_class": {
+            "none": {
+              "auroc": 0.9967,
+              "auprc": 0.9971
+            },
+            "Minor": {
+              "auroc": 0.9759,
+              "auprc": 0.7661
+            },
+            "Moderate": {
+              "auroc": 0.9837,
+              "auprc": 0.9665
+            },
+            "Major": {
+              "auroc": 0.9811,
+              "auprc": 0.9
+            }
+          }
+        },
+        {
+          "accuracy": 0.941,
+          "macro_f1": 0.864,
+          "macro_auroc": 0.9836,
+          "macro_auprc": 0.9039,
+          "per_class": {
+            "none": {
+              "auroc": 0.9967,
+              "auprc": 0.9972
+            },
+            "Minor": {
+              "auroc": 0.9694,
+              "auprc": 0.7322
+            },
+            "Moderate": {
+              "auroc": 0.9851,
+              "auprc": 0.9648
+            },
+            "Major": {
+              "auroc": 0.9833,
+              "auprc": 0.9213
+            }
+          }
+        },
+        {
+          "accuracy": 0.9381,
+          "macro_f1": 0.869,
+          "macro_auroc": 0.9827,
+          "macro_auprc": 0.9109,
+          "per_class": {
+            "none": {
+              "auroc": 0.9966,
+              "auprc": 0.9972
+            },
+            "Minor": {
+              "auroc": 0.9659,
+              "auprc": 0.759
+            },
+            "Moderate": {
+              "auroc": 0.9846,
+              "auprc": 0.9661
+            },
+            "Major": {
+              "auroc": 0.9838,
+              "auprc": 0.9214
+            }
+          }
+        },
+        {
+          "accuracy": 0.9396,
+          "macro_f1": 0.8689,
+          "macro_auroc": 0.9848,
+          "macro_auprc": 0.9066,
+          "per_class": {
+            "none": {
+              "auroc": 0.9965,
+              "auprc": 0.9971
+            },
+            "Minor": {
+              "auroc": 0.9735,
+              "auprc": 0.742
+            },
+            "Moderate": {
+              "auroc": 0.9847,
+              "auprc": 0.9678
+            },
+            "Major": {
+              "auroc": 0.9845,
+              "auprc": 0.9197
+            }
+          }
+        }
+      ],
+      "mechanism": [
+        {
+          "macro_auroc": 0.9747,
+          "per_mechanism": {
+            "cyp_induction": {
+              "auroc": 0.979,
+              "auprc": 0.8788,
+              "precision": 0.7879,
+              "recall": 0.8401,
+              "f1": 0.8132,
+              "specificity": 0.9775,
+              "threshold": 0.2,
+              "support": 1176
+            },
+            "cyp_inhibition": {
+              "auroc": 0.9743,
+              "auprc": 0.8891,
+              "precision": 0.7863,
+              "recall": 0.8504,
+              "f1": 0.8171,
+              "specificity": 0.9568,
+              "threshold": 0.35,
+              "support": 2046
+            },
+            "qt_prolongation": {
+              "auroc": 0.9602,
+              "auprc": 0.2968,
+              "precision": 0.1739,
+              "recall": 0.3636,
+              "f1": 0.2353,
+              "specificity": 0.9985,
+              "threshold": 0.05,
+              "support": 11
+            },
+            "additive_toxicity": {
+              "auroc": 0.9812,
+              "auprc": 0.9311,
+              "precision": 0.8351,
+              "recall": 0.8872,
+              "f1": 0.8603,
+              "specificity": 0.9579,
+              "threshold": 0.2,
+              "support": 2517
+            },
+            "absorption_interference": {
+              "auroc": 0.9858,
+              "auprc": 0.8936,
+              "precision": 0.9211,
+              "recall": 0.7721,
+              "f1": 0.84,
+              "specificity": 0.9993,
+              "threshold": 0.7,
+              "support": 136
+            },
+            "protein_binding": {
+              "auroc": 0.996,
+              "auprc": 0.9294,
+              "precision": 0.92,
+              "recall": 0.8519,
+              "f1": 0.8846,
+              "specificity": 0.9998,
+              "threshold": 0.1,
+              "support": 27
+            },
+            "excretion": {
+              "auroc": 0.9462,
+              "auprc": 0.2247,
+              "precision": 0.2973,
+              "recall": 0.3438,
+              "f1": 0.3188,
+              "specificity": 0.998,
+              "threshold": 0.05,
+              "support": 32
+            }
+          }
+        },
+        {
+          "macro_auroc": 0.9782,
+          "per_mechanism": {
+            "cyp_induction": {
+              "auroc": 0.9815,
+              "auprc": 0.8886,
+              "precision": 0.7985,
+              "recall": 0.8393,
+              "f1": 0.8184,
+              "specificity": 0.9789,
+              "threshold": 0.3,
+              "support": 1176
+            },
+            "cyp_inhibition": {
+              "auroc": 0.9747,
+              "auprc": 0.8914,
+              "precision": 0.7907,
+              "recall": 0.8456,
+              "f1": 0.8172,
+              "specificity": 0.9582,
+              "threshold": 0.15,
+              "support": 2046
+            },
+            "qt_prolongation": {
+              "auroc": 0.9611,
+              "auprc": 0.248,
+              "precision": 0.12,
+              "recall": 0.2727,
+              "f1": 0.1667,
+              "specificity": 0.9983,
+              "threshold": 0.25,
+              "support": 11
+            },
+            "additive_toxicity": {
+              "auroc": 0.9808,
+              "auprc": 0.9331,
+              "precision": 0.8714,
+              "recall": 0.8665,
+              "f1": 0.8689,
+              "specificity": 0.9693,
+              "threshold": 0.4,
+              "support": 2517
+            },
+            "absorption_interference": {
+              "auroc": 0.9921,
+              "auprc": 0.8897,
+              "precision": 0.9244,
+              "recall": 0.8088,
+              "f1": 0.8627,
+              "specificity": 0.9993,
+              "threshold": 0.85,
+              "support": 136
+            },
+            "protein_binding": {
+              "auroc": 0.9978,
+              "auprc": 0.949,
+              "precision": 0.9231,
+              "recall": 0.8889,
+              "f1": 0.9057,
+              "specificity": 0.9998,
+              "threshold": 0.35,
+              "support": 27
+            },
+            "excretion": {
+              "auroc": 0.9595,
+              "auprc": 0.2007,
+              "precision": 0.2632,
+              "recall": 0.3125,
+              "f1": 0.2857,
+              "specificity": 0.9978,
+              "threshold": 0.1,
+              "support": 32
+            }
+          }
+        },
+        {
+          "macro_auroc": 0.9797,
+          "per_mechanism": {
+            "cyp_induction": {
+              "auroc": 0.9801,
+              "auprc": 0.8821,
+              "precision": 0.8087,
+              "recall": 0.8197,
+              "f1": 0.8142,
+              "specificity": 0.9807,
+              "threshold": 0.2,
+              "support": 1176
+            },
+            "cyp_inhibition": {
+              "auroc": 0.974,
+              "auprc": 0.8899,
+              "precision": 0.8083,
+              "recall": 0.8284,
+              "f1": 0.8182,
+              "specificity": 0.9633,
+              "threshold": 0.3,
+              "support": 2046
+            },
+            "qt_prolongation": {
+              "auroc": 0.9779,
+              "auprc": 0.2191,
+              "precision": 0.4286,
+              "recall": 0.2727,
+              "f1": 0.3333,
+              "specificity": 0.9997,
+              "threshold": 0.3,
+              "support": 11
+            },
+            "additive_toxicity": {
+              "auroc": 0.9812,
+              "auprc": 0.9356,
+              "precision": 0.8524,
+              "recall": 0.8812,
+              "f1": 0.8666,
+              "specificity": 0.9634,
+              "threshold": 0.2,
+              "support": 2517
+            },
+            "absorption_interference": {
+              "auroc": 0.9925,
+              "auprc": 0.8823,
+              "precision": 0.8672,
+              "recall": 0.8162,
+              "f1": 0.8409,
+              "specificity": 0.9987,
+              "threshold": 0.7,
+              "support": 136
+            },
+            "protein_binding": {
+              "auroc": 0.997,
+              "auprc": 0.9235,
+              "precision": 0.9167,
+              "recall": 0.8148,
+              "f1": 0.8627,
+              "specificity": 0.9998,
+              "threshold": 0.2,
+              "support": 27
+            },
+            "excretion": {
+              "auroc": 0.9552,
+              "auprc": 0.134,
+              "precision": 0.0923,
+              "recall": 0.5625,
+              "f1": 0.1586,
+              "specificity": 0.9864,
+              "threshold": 0.05,
+              "support": 32
+            }
+          }
+        },
+        {
+          "macro_auroc": 0.9732,
+          "per_mechanism": {
+            "cyp_induction": {
+              "auroc": 0.9781,
+              "auprc": 0.88,
+              "precision": 0.8609,
+              "recall": 0.7738,
+              "f1": 0.815,
+              "specificity": 0.9876,
+              "threshold": 0.65,
+              "support": 1176
+            },
+            "cyp_inhibition": {
+              "auroc": 0.976,
+              "auprc": 0.8936,
+              "precision": 0.8097,
+              "recall": 0.8382,
+              "f1": 0.8237,
+              "specificity": 0.9632,
+              "threshold": 0.15,
+              "support": 2046
+            },
+            "qt_prolongation": {
+              "auroc": 0.9305,
+              "auprc": 0.4123,
+              "precision": 0.3333,
+              "recall": 0.3636,
+              "f1": 0.3478,
+              "specificity": 0.9994,
+              "threshold": 0.25,
+              "support": 11
+            },
+            "additive_toxicity": {
+              "auroc": 0.9821,
+              "auprc": 0.9369,
+              "precision": 0.8569,
+              "recall": 0.8637,
+              "f1": 0.8603,
+              "specificity": 0.9654,
+              "threshold": 0.35,
+              "support": 2517
+            },
+            "absorption_interference": {
+              "auroc": 0.995,
+              "auprc": 0.8921,
+              "precision": 0.8284,
+              "recall": 0.8162,
+              "f1": 0.8222,
+              "specificity": 0.9982,
+              "threshold": 0.25,
+              "support": 136
+            },
+            "protein_binding": {
+              "auroc": 0.9985,
+              "auprc": 0.9321,
+              "precision": 0.92,
+              "recall": 0.8519,
+              "f1": 0.8846,
+              "specificity": 0.9998,
+              "threshold": 0.55,
+              "support": 27
+            },
+            "excretion": {
+              "auroc": 0.9519,
+              "auprc": 0.2485,
+              "precision": 0.3,
+              "recall": 0.2812,
+              "f1": 0.2903,
+              "specificity": 0.9984,
+              "threshold": 0.3,
+              "support": 32
+            }
+          }
+        },
+        {
+          "macro_auroc": 0.9711,
+          "per_mechanism": {
+            "cyp_induction": {
+              "auroc": 0.982,
+              "auprc": 0.8919,
+              "precision": 0.832,
+              "recall": 0.8002,
+              "f1": 0.8158,
+              "specificity": 0.9839,
+              "threshold": 0.5,
+              "support": 1176
+            },
+            "cyp_inhibition": {
+              "auroc": 0.9715,
+              "auprc": 0.8716,
+              "precision": 0.7857,
+              "recall": 0.826,
+              "f1": 0.8053,
+              "specificity": 0.9579,
+              "threshold": 0.35,
+              "support": 2046
+            },
+            "qt_prolongation": {
+              "auroc": 0.9592,
+              "auprc": 0.1796,
+              "precision": 0.3333,
+              "recall": 0.0909,
+              "f1": 0.1429,
+              "specificity": 0.9998,
+              "threshold": 0.55,
+              "support": 11
+            },
+            "additive_toxicity": {
+              "auroc": 0.9802,
+              "auprc": 0.9285,
+              "precision": 0.8388,
+              "recall": 0.8725,
+              "f1": 0.8553,
+              "specificity": 0.9598,
+              "threshold": 0.15,
+              "support": 2517
+            },
+            "absorption_interference": {
+              "auroc": 0.9899,
+              "auprc": 0.8848,
+              "precision": 0.8397,
+              "recall": 0.8088,
+              "f1": 0.824,
+              "specificity": 0.9984,
+              "threshold": 0.65,
+              "support": 136
+            },
+            "protein_binding": {
+              "auroc": 0.9898,
+              "auprc": 0.9037,
+              "precision": 0.8462,
+              "recall": 0.8148,
+              "f1": 0.8302,
+              "specificity": 0.9997,
+              "threshold": 0.35,
+              "support": 27
+            },
+            "excretion": {
+              "auroc": 0.9253,
+              "auprc": 0.2039,
+              "precision": 0.5385,
+              "recall": 0.2188,
+              "f1": 0.3111,
+              "specificity": 0.9995,
+              "threshold": 0.3,
+              "support": 32
+            }
+          }
+        }
+      ]
+    },
+    "severity": {
+      "accuracy": {
+        "mean": 0.938,
+        "std": 0.0026
+      },
+      "macro_f1": {
+        "mean": 0.8646,
+        "std": 0.0043
+      },
+      "macro_auroc": {
+        "mean": 0.9837,
+        "std": 0.0008
+      },
+      "macro_auprc": {
+        "mean": 0.907,
+        "std": 0.0023
+      }
+    },
+    "severity_per_class": {
+      "none": {
+        "auroc": {
+          "mean": 0.9967,
+          "std": 0.0001
+        },
+        "auprc": {
+          "mean": 0.9972,
+          "std": 0.0001
+        }
+      },
+      "Minor": {
+        "auroc": {
+          "mean": 0.9703,
+          "std": 0.0039
+        },
+        "auprc": {
+          "mean": 0.7491,
+          "std": 0.0121
+        }
+      },
+      "Moderate": {
+        "auroc": {
+          "mean": 0.9846,
+          "std": 0.0005
+        },
+        "auprc": {
+          "mean": 0.9665,
+          "std": 0.0011
+        }
+      },
+      "Major": {
+        "auroc": {
+          "mean": 0.9832,
+          "std": 0.0011
+        },
+        "auprc": {
+          "mean": 0.9153,
+          "std": 0.0081
+        }
+      }
+    },
+    "mechanism": {
+      "mech_macro_auroc": {
+        "mean": 0.9754,
+        "std": 0.0032
+      }
+    },
+    "ensemble": {
+      "accuracy": 0.9549,
+      "macro_f1": 0.8958,
+      "macro_auroc": 0.9906,
+      "macro_auprc": 0.9415,
+      "severity_per_class": {
+        "none": {
+          "precision": 0.995,
+          "sensitivity": 0.9774,
+          "specificity": 0.9951,
+          "f1": 0.9861,
+          "support": 6501
+        },
+        "Minor": {
+          "precision": 0.8718,
+          "sensitivity": 0.6755,
+          "specificity": 0.9976,
+          "f1": 0.7612,
+          "support": 302
+        },
+        "Moderate": {
+          "precision": 0.9166,
+          "sensitivity": 0.9703,
+          "specificity": 0.9504,
+          "f1": 0.9427,
+          "support": 4679
+        },
+        "Major": {
+          "precision": 0.9216,
+          "sensitivity": 0.8664,
+          "specificity": 0.9902,
+          "f1": 0.8932,
+          "support": 1520
+        }
+      },
+      "severity_curves": {
+        "none": {
+          "auroc": 0.9983,
+          "auprc": 0.9986
+        },
+        "Minor": {
+          "auroc": 0.9829,
+          "auprc": 0.835
+        },
+        "Moderate": {
+          "auroc": 0.9909,
+          "auprc": 0.9806
+        },
+        "Major": {
+          "auroc": 0.9905,
+          "auprc": 0.9518
+        }
+      },
+      "confusion_matrix": [
+        [
+          6354,
+          3,
+          130,
+          14
+        ],
+        [
+          2,
+          204,
+          91,
+          5
+        ],
+        [
+          25,
+          21,
+          4540,
+          93
+        ],
+        [
+          5,
+          6,
+          192,
+          1317
+        ]
+      ],
+      "calibration": {
+        "bins": [
+          {
+            "bin": 3,
+            "lower": 0.30000000000000004,
+            "upper": 0.4,
+            "n": 8,
+            "confidence": 0.3889,
+            "accuracy": 0.625
+          },
+          {
+            "bin": 4,
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 51,
+            "confidence": 0.4591,
+            "accuracy": 0.451
+          },
+          {
+            "bin": 5,
+            "lower": 0.5,
+            "upper": 0.6000000000000001,
+            "n": 298,
+            "confidence": 0.5515,
+            "accuracy": 0.6007
+          },
+          {
+            "bin": 6,
+            "lower": 0.6000000000000001,
+            "upper": 0.7000000000000001,
+            "n": 355,
+            "confidence": 0.6484,
+            "accuracy": 0.662
+          },
+          {
+            "bin": 7,
+            "lower": 0.7000000000000001,
+            "upper": 0.8,
+            "n": 464,
+            "confidence": 0.7622,
+            "accuracy": 0.7866
+          },
+          {
+            "bin": 8,
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 612,
+            "confidence": 0.8443,
+            "accuracy": 0.8758
+          },
+          {
+            "bin": 9,
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 11214,
+            "confidence": 0.9954,
+            "accuracy": 0.9873
+          }
+        ],
+        "ece": 0.011,
+        "n_total": 13002
+      },
+      "mechanism": {
+        "cyp_induction": {
+          "auroc": 0.9885,
+          "auprc": 0.9248,
+          "precision": 0.8409,
+          "recall": 0.881,
+          "f1": 0.8605,
+          "specificity": 0.9834,
+          "threshold": 0.35,
+          "support": 1176
+        },
+        "cyp_inhibition": {
+          "auroc": 0.981,
+          "auprc": 0.9154,
+          "precision": 0.8284,
+          "recall": 0.8539,
+          "f1": 0.8409,
+          "specificity": 0.967,
+          "threshold": 0.4,
+          "support": 2046
+        },
+        "qt_prolongation": {
+          "auroc": 0.9754,
+          "auprc": 0.3636,
+          "precision": 0.4,
+          "recall": 0.3636,
+          "f1": 0.381,
+          "specificity": 0.9995,
+          "threshold": 0.25,
+          "support": 11
+        },
+        "additive_toxicity": {
+          "auroc": 0.9882,
+          "auprc": 0.9573,
+          "precision": 0.8859,
+          "recall": 0.9102,
+          "f1": 0.8979,
+          "specificity": 0.9719,
+          "threshold": 0.4,
+          "support": 2517
+        },
+        "absorption_interference": {
+          "auroc": 0.9964,
+          "auprc": 0.9209,
+          "precision": 0.8797,
+          "recall": 0.8603,
+          "f1": 0.8699,
+          "specificity": 0.9988,
+          "threshold": 0.4,
+          "support": 136
+        },
+        "protein_binding": {
+          "auroc": 0.9971,
+          "auprc": 0.9527,
+          "precision": 0.9231,
+          "recall": 0.8889,
+          "f1": 0.9057,
+          "specificity": 0.9998,
+          "threshold": 0.4,
+          "support": 27
+        },
+        "excretion": {
+          "auroc": 0.9594,
+          "auprc": 0.2975,
+          "precision": 0.3571,
+          "recall": 0.3125,
+          "f1": 0.3333,
+          "specificity": 0.9986,
+          "threshold": 0.2,
+          "support": 32
+        }
+      },
+      "mech_macro_auroc": 0.9837
+    }
+  },
+  "xgb": {
+    "folds": {
+      "severity": [
+        {
+          "accuracy": 0.8889,
+          "macro_f1": 0.779,
+          "macro_auroc": 0.9716,
+          "macro_auprc": 0.8409,
+          "per_class": {
+            "none": {
+              "auroc": 0.9927,
+              "auprc": 0.9937
+            },
+            "Minor": {
+              "auroc": 0.9716,
+              "auprc": 0.6559
+            },
+            "Moderate": {
+              "auroc": 0.9629,
+              "auprc": 0.9284
+            },
+            "Major": {
+              "auroc": 0.9593,
+              "auprc": 0.7856
+            }
+          }
+        },
+        {
+          "accuracy": 0.8891,
+          "macro_f1": 0.7818,
+          "macro_auroc": 0.9722,
+          "macro_auprc": 0.8453,
+          "per_class": {
+            "none": {
+              "auroc": 0.9928,
+              "auprc": 0.9937
+            },
+            "Minor": {
+              "auroc": 0.9725,
+              "auprc": 0.668
+            },
+            "Moderate": {
+              "auroc": 0.9633,
+              "auprc": 0.9285
+            },
+            "Major": {
+              "auroc": 0.9602,
+              "auprc": 0.791
+            }
+          }
+        },
+        {
+          "accuracy": 0.8871,
+          "macro_f1": 0.7761,
+          "macro_auroc": 0.9719,
+          "macro_auprc": 0.8412,
+          "per_class": {
+            "none": {
+              "auroc": 0.9927,
+              "auprc": 0.9936
+            },
+            "Minor": {
+              "auroc": 0.9723,
+              "auprc": 0.6554
+            },
+            "Moderate": {
+              "auroc": 0.9627,
+              "auprc": 0.9281
+            },
+            "Major": {
+              "auroc": 0.9599,
+              "auprc": 0.7875
+            }
+          }
+        },
+        {
+          "accuracy": 0.8898,
+          "macro_f1": 0.7793,
+          "macro_auroc": 0.9725,
+          "macro_auprc": 0.8426,
+          "per_class": {
+            "none": {
+              "auroc": 0.9927,
+              "auprc": 0.9936
+            },
+            "Minor": {
+              "auroc": 0.975,
+              "auprc": 0.6608
+            },
+            "Moderate": {
+              "auroc": 0.9631,
+              "auprc": 0.9289
+            },
+            "Major": {
+              "auroc": 0.9592,
+              "auprc": 0.787
+            }
+          }
+        },
+        {
+          "accuracy": 0.8885,
+          "macro_f1": 0.7829,
+          "macro_auroc": 0.9723,
+          "macro_auprc": 0.8444,
+          "per_class": {
+            "none": {
+              "auroc": 0.9926,
+              "auprc": 0.9936
+            },
+            "Minor": {
+              "auroc": 0.9733,
+              "auprc": 0.6646
+            },
+            "Moderate": {
+              "auroc": 0.9633,
+              "auprc": 0.9294
+            },
+            "Major": {
+              "auroc": 0.9601,
+              "auprc": 0.79
+            }
+          }
+        }
+      ],
+      "mechanism": [
+        {
+          "macro_auroc": 0.9755,
+          "per_mechanism": {
+            "cyp_induction": {
+              "auroc": 0.9632,
+              "auprc": 0.7825,
+              "precision": 0.713,
+              "recall": 0.7245,
+              "f1": 0.7187,
+              "specificity": 0.971,
+              "threshold": 0.35,
+              "support": 1176
+            },
+            "cyp_inhibition": {
+              "auroc": 0.9681,
+              "auprc": 0.8653,
+              "precision": 0.8024,
+              "recall": 0.7879,
+              "f1": 0.7951,
+              "specificity": 0.9638,
+              "threshold": 0.45,
+              "support": 2046
+            },
+            "qt_prolongation": {
+              "auroc": 0.9777,
+              "auprc": 0.4659,
+              "precision": 0.5,
+              "recall": 0.3636,
+              "f1": 0.4211,
+              "specificity": 0.9997,
+              "threshold": 0.25,
+              "support": 11
+            },
+            "additive_toxicity": {
+              "auroc": 0.955,
+              "auprc": 0.8429,
+              "precision": 0.7418,
+              "recall": 0.8002,
+              "f1": 0.7699,
+              "specificity": 0.9331,
+              "threshold": 0.4,
+              "support": 2517
+            },
+            "absorption_interference": {
+              "auroc": 0.9941,
+              "auprc": 0.8951,
+              "precision": 0.875,
+              "recall": 0.7721,
+              "f1": 0.8203,
+              "specificity": 0.9988,
+              "threshold": 0.45,
+              "support": 136
+            },
+            "protein_binding": {
+              "auroc": 0.9946,
+              "auprc": 0.9377,
+              "precision": 0.8929,
+              "recall": 0.9259,
+              "f1": 0.9091,
+              "specificity": 0.9998,
+              "threshold": 0.35,
+              "support": 27
+            },
+            "excretion": {
+              "auroc": 0.9756,
+              "auprc": 0.327,
+              "precision": 0.3158,
+              "recall": 0.375,
+              "f1": 0.3429,
+              "specificity": 0.998,
+              "threshold": 0.15,
+              "support": 32
+            }
+          }
+        },
+        {
+          "macro_auroc": 0.9692,
+          "per_mechanism": {
+            "cyp_induction": {
+              "auroc": 0.9624,
+              "auprc": 0.7792,
+              "precision": 0.6888,
+              "recall": 0.7509,
+              "f1": 0.7185,
+              "specificity": 0.9663,
+              "threshold": 0.3,
+              "support": 1176
+            },
+            "cyp_inhibition": {
+              "auroc": 0.9684,
+              "auprc": 0.8691,
+              "precision": 0.8072,
+              "recall": 0.784,
+              "f1": 0.7954,
+              "specificity": 0.965,
+              "threshold": 0.45,
+              "support": 2046
+            },
+            "qt_prolongation": {
+              "auroc": 0.9394,
+              "auprc": 0.4702,
+              "precision": 0.4615,
+              "recall": 0.5455,
+              "f1": 0.5,
+              "specificity": 0.9995,
+              "threshold": 0.25,
+              "support": 11
+            },
+            "additive_toxicity": {
+              "auroc": 0.9548,
+              "auprc": 0.8422,
+              "precision": 0.7406,
+              "recall": 0.8041,
+              "f1": 0.771,
+              "specificity": 0.9324,
+              "threshold": 0.4,
+              "support": 2517
+            },
+            "absorption_interference": {
+              "auroc": 0.9959,
+              "auprc": 0.8868,
+              "precision": 0.8295,
+              "recall": 0.7868,
+              "f1": 0.8075,
+              "specificity": 0.9983,
+              "threshold": 0.3,
+              "support": 136
+            },
+            "protein_binding": {
+              "auroc": 0.9961,
+              "auprc": 0.9349,
+              "precision": 0.9545,
+              "recall": 0.7778,
+              "f1": 0.8571,
+              "specificity": 0.9999,
+              "threshold": 0.4,
+              "support": 27
+            },
+            "excretion": {
+              "auroc": 0.9672,
+              "auprc": 0.3076,
+              "precision": 0.4091,
+              "recall": 0.2812,
+              "f1": 0.3333,
+              "specificity": 0.999,
+              "threshold": 0.2,
+              "support": 32
+            }
+          }
+        },
+        {
+          "macro_auroc": 0.9678,
+          "per_mechanism": {
+            "cyp_induction": {
+              "auroc": 0.9631,
+              "auprc": 0.7782,
+              "precision": 0.7016,
+              "recall": 0.7236,
+              "f1": 0.7124,
+              "specificity": 0.9694,
+              "threshold": 0.35,
+              "support": 1176
+            },
+            "cyp_inhibition": {
+              "auroc": 0.9676,
+              "auprc": 0.8674,
+              "precision": 0.783,
+              "recall": 0.8094,
+              "f1": 0.796,
+              "specificity": 0.9581,
+              "threshold": 0.4,
+              "support": 2046
+            },
+            "qt_prolongation": {
+              "auroc": 0.9257,
+              "auprc": 0.4723,
+              "precision": 0.625,
+              "recall": 0.4545,
+              "f1": 0.5263,
+              "specificity": 0.9998,
+              "threshold": 0.3,
+              "support": 11
+            },
+            "additive_toxicity": {
+              "auroc": 0.9541,
+              "auprc": 0.8411,
+              "precision": 0.7071,
+              "recall": 0.826,
+              "f1": 0.762,
+              "specificity": 0.9179,
+              "threshold": 0.35,
+              "support": 2517
+            },
+            "absorption_interference": {
+              "auroc": 0.9967,
+              "auprc": 0.8865,
+              "precision": 0.8209,
+              "recall": 0.8088,
+              "f1": 0.8148,
+              "specificity": 0.9981,
+              "threshold": 0.35,
+              "support": 136
+            },
+            "protein_binding": {
+              "auroc": 0.9977,
+              "auprc": 0.9437,
+              "precision": 0.8571,
+              "recall": 0.8889,
+              "f1": 0.8727,
+              "specificity": 0.9997,
+              "threshold": 0.3,
+              "support": 27
+            },
+            "excretion": {
+              "auroc": 0.9695,
+              "auprc": 0.3218,
+              "precision": 0.2308,
+              "recall": 0.4688,
+              "f1": 0.3093,
+              "specificity": 0.9961,
+              "threshold": 0.1,
+              "support": 32
+            }
+          }
+        },
+        {
+          "macro_auroc": 0.9682,
+          "per_mechanism": {
+            "cyp_induction": {
+              "auroc": 0.9625,
+              "auprc": 0.7795,
+              "precision": 0.6913,
+              "recall": 0.756,
+              "f1": 0.7222,
+              "specificity": 0.9664,
+              "threshold": 0.3,
+              "support": 1176
+            },
+            "cyp_inhibition": {
+              "auroc": 0.968,
+              "auprc": 0.8661,
+              "precision": 0.8015,
+              "recall": 0.7854,
+              "f1": 0.7934,
+              "specificity": 0.9637,
+              "threshold": 0.45,
+              "support": 2046
+            },
+            "qt_prolongation": {
+              "auroc": 0.9316,
+              "auprc": 0.5127,
+              "precision": 0.3529,
+              "recall": 0.5455,
+              "f1": 0.4286,
+              "specificity": 0.9992,
+              "threshold": 0.2,
+              "support": 11
+            },
+            "additive_toxicity": {
+              "auroc": 0.9548,
+              "auprc": 0.8418,
+              "precision": 0.711,
+              "recall": 0.8327,
+              "f1": 0.7671,
+              "specificity": 0.9187,
+              "threshold": 0.35,
+              "support": 2517
+            },
+            "absorption_interference": {
+              "auroc": 0.9948,
+              "auprc": 0.8658,
+              "precision": 0.8583,
+              "recall": 0.7574,
+              "f1": 0.8047,
+              "specificity": 0.9987,
+              "threshold": 0.45,
+              "support": 136
+            },
+            "protein_binding": {
+              "auroc": 0.9976,
+              "auprc": 0.8936,
+              "precision": 0.9259,
+              "recall": 0.9259,
+              "f1": 0.9259,
+              "specificity": 0.9998,
+              "threshold": 0.25,
+              "support": 27
+            },
+            "excretion": {
+              "auroc": 0.9683,
+              "auprc": 0.3398,
+              "precision": 0.3,
+              "recall": 0.375,
+              "f1": 0.3333,
+              "specificity": 0.9978,
+              "threshold": 0.15,
+              "support": 32
+            }
+          }
+        },
+        {
+          "macro_auroc": 0.9661,
+          "per_mechanism": {
+            "cyp_induction": {
+              "auroc": 0.9623,
+              "auprc": 0.7813,
+              "precision": 0.6977,
+              "recall": 0.7577,
+              "f1": 0.7265,
+              "specificity": 0.9674,
+              "threshold": 0.3,
+              "support": 1176
+            },
+            "cyp_inhibition": {
+              "auroc": 0.9686,
+              "auprc": 0.8704,
+              "precision": 0.8074,
+              "recall": 0.7869,
+              "f1": 0.797,
+              "specificity": 0.965,
+              "threshold": 0.45,
+              "support": 2046
+            },
+            "qt_prolongation": {
+              "auroc": 0.9456,
+              "auprc": 0.4722,
+              "precision": 0.4,
+              "recall": 0.5455,
+              "f1": 0.4615,
+              "specificity": 0.9993,
+              "threshold": 0.2,
+              "support": 11
+            },
+            "additive_toxicity": {
+              "auroc": 0.9549,
+              "auprc": 0.8417,
+              "precision": 0.7098,
+              "recall": 0.8355,
+              "f1": 0.7675,
+              "specificity": 0.918,
+              "threshold": 0.35,
+              "support": 2517
+            },
+            "absorption_interference": {
+              "auroc": 0.9921,
+              "auprc": 0.8871,
+              "precision": 0.8707,
+              "recall": 0.7426,
+              "f1": 0.8016,
+              "specificity": 0.9988,
+              "threshold": 0.45,
+              "support": 136
+            },
+            "protein_binding": {
+              "auroc": 0.9795,
+              "auprc": 0.9165,
+              "precision": 0.9286,
+              "recall": 0.963,
+              "f1": 0.9455,
+              "specificity": 0.9998,
+              "threshold": 0.35,
+              "support": 27
+            },
+            "excretion": {
+              "auroc": 0.9595,
+              "auprc": 0.3206,
+              "precision": 0.2,
+              "recall": 0.4375,
+              "f1": 0.2745,
+              "specificity": 0.9957,
+              "threshold": 0.1,
+              "support": 32
+            }
+          }
+        }
+      ]
+    },
+    "severity": {
+      "accuracy": {
+        "mean": 0.8887,
+        "std": 0.0009
+      },
+      "macro_f1": {
+        "mean": 0.7798,
+        "std": 0.0024
+      },
+      "macro_auroc": {
+        "mean": 0.9721,
+        "std": 0.0003
+      },
+      "macro_auprc": {
+        "mean": 0.8429,
+        "std": 0.0017
+      }
+    },
+    "severity_per_class": {
+      "none": {
+        "auroc": {
+          "mean": 0.9927,
+          "std": 0.0001
+        },
+        "auprc": {
+          "mean": 0.9936,
+          "std": 0.0
+        }
+      },
+      "Minor": {
+        "auroc": {
+          "mean": 0.9729,
+          "std": 0.0012
+        },
+        "auprc": {
+          "mean": 0.6609,
+          "std": 0.0049
+        }
+      },
+      "Moderate": {
+        "auroc": {
+          "mean": 0.9631,
+          "std": 0.0002
+        },
+        "auprc": {
+          "mean": 0.9287,
+          "std": 0.0004
+        }
+      },
+      "Major": {
+        "auroc": {
+          "mean": 0.9597,
+          "std": 0.0004
+        },
+        "auprc": {
+          "mean": 0.7882,
+          "std": 0.002
+        }
+      }
+    },
+    "mechanism": {
+      "mech_macro_auroc": {
+        "mean": 0.9694,
+        "std": 0.0032
+      }
+    },
+    "ensemble": {
+      "accuracy": 0.89,
+      "macro_f1": 0.7811,
+      "macro_auroc": 0.9733,
+      "macro_auprc": 0.8472,
+      "severity_per_class": {
+        "none": {
+          "precision": 0.956,
+          "sensitivity": 0.9634,
+          "specificity": 0.9557,
+          "f1": 0.9597,
+          "support": 6501
+        },
+        "Minor": {
+          "precision": 0.8066,
+          "sensitivity": 0.4834,
+          "specificity": 0.9972,
+          "f1": 0.6046,
+          "support": 302
+        },
+        "Moderate": {
+          "precision": 0.832,
+          "sensitivity": 0.9015,
+          "specificity": 0.8976,
+          "f1": 0.8653,
+          "support": 4679
+        },
+        "Major": {
+          "precision": 0.7875,
+          "sensitivity": 0.6217,
+          "specificity": 0.9778,
+          "f1": 0.6949,
+          "support": 1520
+        }
+      },
+      "severity_curves": {
+        "none": {
+          "auroc": 0.9928,
+          "auprc": 0.9938
+        },
+        "Minor": {
+          "auroc": 0.9756,
+          "auprc": 0.6715
+        },
+        "Moderate": {
+          "auroc": 0.9639,
+          "auprc": 0.9305
+        },
+        "Major": {
+          "auroc": 0.9609,
+          "auprc": 0.7928
+        }
+      },
+      "confusion_matrix": [
+        [
+          6263,
+          5,
+          213,
+          20
+        ],
+        [
+          15,
+          146,
+          126,
+          15
+        ],
+        [
+          218,
+          23,
+          4218,
+          220
+        ],
+        [
+          55,
+          7,
+          513,
+          945
+        ]
+      ],
+      "calibration": {
+        "bins": [
+          {
+            "bin": 3,
+            "lower": 0.30000000000000004,
+            "upper": 0.4,
+            "n": 26,
+            "confidence": 0.3803,
+            "accuracy": 0.4615
+          },
+          {
+            "bin": 4,
+            "lower": 0.4,
+            "upper": 0.5,
+            "n": 252,
+            "confidence": 0.4692,
+            "accuracy": 0.504
+          },
+          {
+            "bin": 5,
+            "lower": 0.5,
+            "upper": 0.6000000000000001,
+            "n": 811,
+            "confidence": 0.5494,
+            "accuracy": 0.5302
+          },
+          {
+            "bin": 6,
+            "lower": 0.6000000000000001,
+            "upper": 0.7000000000000001,
+            "n": 1025,
+            "confidence": 0.6522,
+            "accuracy": 0.6946
+          },
+          {
+            "bin": 7,
+            "lower": 0.7000000000000001,
+            "upper": 0.8,
+            "n": 1224,
+            "confidence": 0.7515,
+            "accuracy": 0.7778
+          },
+          {
+            "bin": 8,
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 1717,
+            "confidence": 0.8531,
+            "accuracy": 0.8771
+          },
+          {
+            "bin": 9,
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 7947,
+            "confidence": 0.9812,
+            "accuracy": 0.9857
+          }
+        ],
+        "ece": 0.0137,
+        "n_total": 13002
+      },
+      "mechanism": {
+        "cyp_induction": {
+          "auroc": 0.9646,
+          "auprc": 0.7867,
+          "precision": 0.6951,
+          "recall": 0.7619,
+          "f1": 0.727,
+          "specificity": 0.9668,
+          "threshold": 0.3,
+          "support": 1176
+        },
+        "cyp_inhibition": {
+          "auroc": 0.9689,
+          "auprc": 0.8704,
+          "precision": 0.8044,
+          "recall": 0.7859,
+          "f1": 0.7951,
+          "specificity": 0.9643,
+          "threshold": 0.45,
+          "support": 2046
+        },
+        "qt_prolongation": {
+          "auroc": 0.9597,
+          "auprc": 0.519,
+          "precision": 0.4167,
+          "recall": 0.4545,
+          "f1": 0.4348,
+          "specificity": 0.9995,
+          "threshold": 0.25,
+          "support": 11
+        },
+        "additive_toxicity": {
+          "auroc": 0.9559,
+          "auprc": 0.845,
+          "precision": 0.7431,
+          "recall": 0.8045,
+          "f1": 0.7726,
+          "specificity": 0.9332,
+          "threshold": 0.4,
+          "support": 2517
+        },
+        "absorption_interference": {
+          "auroc": 0.9966,
+          "auprc": 0.8932,
+          "precision": 0.8182,
+          "recall": 0.7941,
+          "f1": 0.806,
+          "specificity": 0.9981,
+          "threshold": 0.35,
+          "support": 136
+        },
+        "protein_binding": {
+          "auroc": 0.9965,
+          "auprc": 0.9424,
+          "precision": 0.8667,
+          "recall": 0.963,
+          "f1": 0.9123,
+          "specificity": 0.9997,
+          "threshold": 0.25,
+          "support": 27
+        },
+        "excretion": {
+          "auroc": 0.9738,
+          "auprc": 0.3547,
+          "precision": 0.3611,
+          "recall": 0.4062,
+          "f1": 0.3824,
+          "specificity": 0.9982,
+          "threshold": 0.15,
+          "support": 32
+        }
+      },
+      "mech_macro_auroc": 0.9737
+    }
+  }
+}

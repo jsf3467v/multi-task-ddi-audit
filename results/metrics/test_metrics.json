@@ -1,0 +1,213 @@
+{
+  "accuracy": 0.8617,
+  "macro_f1": 0.748,
+  "severity_per_class": {
+    "none": {
+      "precision": 0.9872,
+      "sensitivity": 0.9503,
+      "specificity": 0.9877,
+      "f1": 0.9684,
+      "support": 6501
+    },
+    "Minor": {
+      "precision": 0.3562,
+      "sensitivity": 0.8775,
+      "specificity": 0.9623,
+      "f1": 0.5067,
+      "support": 302
+    },
+    "Moderate": {
+      "precision": 0.8866,
+      "sensitivity": 0.7487,
+      "specificity": 0.9462,
+      "f1": 0.8118,
+      "support": 4679
+    },
+    "Major": {
+      "precision": 0.614,
+      "sensitivity": 0.8276,
+      "specificity": 0.9311,
+      "f1": 0.705,
+      "support": 1520
+    }
+  },
+  "severity_auroc_auprc": {
+    "none": {
+      "auroc": 0.9938,
+      "auprc": 0.9949
+    },
+    "Minor": {
+      "auroc": 0.9824,
+      "auprc": 0.7453
+    },
+    "Moderate": {
+      "auroc": 0.956,
+      "auprc": 0.9212
+    },
+    "Major": {
+      "auroc": 0.9614,
+      "auprc": 0.7802
+    }
+  },
+  "confusion_matrix": [
+    [
+      6178,
+      45,
+      217,
+      61
+    ],
+    [
+      2,
+      265,
+      27,
+      8
+    ],
+    [
+      74,
+      380,
+      3503,
+      722
+    ],
+    [
+      4,
+      54,
+      204,
+      1258
+    ]
+  ],
+  "mechanism": {
+    "cyp_induction": {
+      "auroc": 0.9257,
+      "auprc": 0.6208,
+      "precision": 0.5003,
+      "recall": 0.6556,
+      "f1": 0.5675,
+      "specificity": 0.9349,
+      "threshold": 0.35,
+      "support": 1176
+    },
+    "cyp_inhibition": {
+      "auroc": 0.9436,
+      "auprc": 0.7402,
+      "precision": 0.6478,
+      "recall": 0.7424,
+      "f1": 0.6919,
+      "specificity": 0.9246,
+      "threshold": 0.5,
+      "support": 2046
+    },
+    "qt_prolongation": {
+      "auroc": 0.9812,
+      "auprc": 0.1583,
+      "precision": 0.3333,
+      "recall": 0.0909,
+      "f1": 0.1429,
+      "specificity": 0.9998,
+      "threshold": 0.45,
+      "support": 11
+    },
+    "additive_toxicity": {
+      "auroc": 0.9335,
+      "auprc": 0.7734,
+      "precision": 0.6702,
+      "recall": 0.7251,
+      "f1": 0.6966,
+      "specificity": 0.9144,
+      "threshold": 0.6,
+      "support": 2517
+    },
+    "absorption_interference": {
+      "auroc": 0.9735,
+      "auprc": 0.6541,
+      "precision": 0.5894,
+      "recall": 0.6544,
+      "f1": 0.6202,
+      "specificity": 0.9952,
+      "threshold": 0.5,
+      "support": 136
+    },
+    "protein_binding": {
+      "auroc": 0.9961,
+      "auprc": 0.445,
+      "precision": 0.5217,
+      "recall": 0.4444,
+      "f1": 0.48,
+      "specificity": 0.9992,
+      "threshold": 0.4,
+      "support": 27
+    },
+    "excretion": {
+      "auroc": 0.8799,
+      "auprc": 0.0344,
+      "precision": 0.0741,
+      "recall": 0.125,
+      "f1": 0.093,
+      "specificity": 0.9961,
+      "threshold": 0.15,
+      "support": 32
+    }
+  },
+  "mech_macro_auroc": 0.9476,
+  "calibration": {
+    "bins": [
+      {
+        "bin": 3,
+        "lower": 0.30000000000000004,
+        "upper": 0.4,
+        "n": 79,
+        "confidence": 0.377,
+        "accuracy": 0.3671
+      },
+      {
+        "bin": 4,
+        "lower": 0.4,
+        "upper": 0.5,
+        "n": 439,
+        "confidence": 0.4661,
+        "accuracy": 0.4829
+      },
+      {
+        "bin": 5,
+        "lower": 0.5,
+        "upper": 0.6000000000000001,
+        "n": 1160,
+        "confidence": 0.5491,
+        "accuracy": 0.5698
+      },
+      {
+        "bin": 6,
+        "lower": 0.6000000000000001,
+        "upper": 0.7000000000000001,
+        "n": 1149,
+        "confidence": 0.651,
+        "accuracy": 0.6806
+      },
+      {
+        "bin": 7,
+        "lower": 0.7000000000000001,
+        "upper": 0.8,
+        "n": 1374,
+        "confidence": 0.7502,
+        "accuracy": 0.7656
+      },
+      {
+        "bin": 8,
+        "lower": 0.8,
+        "upper": 0.9,
+        "n": 1567,
+        "confidence": 0.8523,
+        "accuracy": 0.8571
+      },
+      {
+        "bin": 9,
+        "lower": 0.9,
+        "upper": 1.0,
+        "n": 7234,
+        "confidence": 0.9831,
+        "accuracy": 0.9849
+      }
+    ],
+    "ece": 0.0083,
+    "n_total": 13002
+  }
+}

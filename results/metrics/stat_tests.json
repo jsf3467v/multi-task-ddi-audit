@@ -1,0 +1,941 @@
+{
+  "per_model": {
+    "ablation_gnn_only": {
+      "accuracy": {
+        "mean": 0.8487,
+        "lo": 0.8428,
+        "hi": 0.8549
+      },
+      "macro_f1": {
+        "mean": 0.7415,
+        "lo": 0.7303,
+        "hi": 0.7524
+      },
+      "severity_macro_auroc": {
+        "mean": 0.9702,
+        "lo": 0.9678,
+        "hi": 0.9726
+      },
+      "severity_per_class": {
+        "none": {
+          "precision": {
+            "mean": 0.9953,
+            "lo": 0.9935,
+            "hi": 0.997
+          },
+          "recall": {
+            "mean": 0.9075,
+            "lo": 0.9003,
+            "hi": 0.9146
+          },
+          "f1": {
+            "mean": 0.9494,
+            "lo": 0.9453,
+            "hi": 0.9532
+          }
+        },
+        "Minor": {
+          "precision": {
+            "mean": 0.3576,
+            "lo": 0.3229,
+            "hi": 0.3918
+          },
+          "recall": {
+            "mean": 0.8573,
+            "lo": 0.8176,
+            "hi": 0.8955
+          },
+          "f1": {
+            "mean": 0.5045,
+            "lo": 0.4664,
+            "hi": 0.5398
+          }
+        },
+        "Moderate": {
+          "precision": {
+            "mean": 0.8421,
+            "lo": 0.8307,
+            "hi": 0.8525
+          },
+          "recall": {
+            "mean": 0.7715,
+            "lo": 0.76,
+            "hi": 0.7835
+          },
+          "f1": {
+            "mean": 0.8052,
+            "lo": 0.7964,
+            "hi": 0.8139
+          }
+        },
+        "Major": {
+          "precision": {
+            "mean": 0.6139,
+            "lo": 0.5942,
+            "hi": 0.6347
+          },
+          "recall": {
+            "mean": 0.8336,
+            "lo": 0.815,
+            "hi": 0.8521
+          },
+          "f1": {
+            "mean": 0.707,
+            "lo": 0.6895,
+            "hi": 0.723
+          }
+        }
+      },
+      "mechanism_macro_auroc": {
+        "mean": 0.9473,
+        "lo": 0.938,
+        "hi": 0.9553
+      }
+    },
+    "ablation_pk_only": {
+      "accuracy": {
+        "mean": 0.6349,
+        "lo": 0.6267,
+        "hi": 0.6432
+      },
+      "macro_f1": {
+        "mean": 0.4718,
+        "lo": 0.4633,
+        "hi": 0.4799
+      },
+      "severity_macro_auroc": {
+        "mean": 0.8283,
+        "lo": 0.8199,
+        "hi": 0.8364
+      },
+      "severity_per_class": {
+        "none": {
+          "precision": {
+            "mean": 0.8807,
+            "lo": 0.8726,
+            "hi": 0.8888
+          },
+          "recall": {
+            "mean": 0.8621,
+            "lo": 0.8533,
+            "hi": 0.8703
+          },
+          "f1": {
+            "mean": 0.8713,
+            "lo": 0.8648,
+            "hi": 0.8772
+          }
+        },
+        "Minor": {
+          "precision": {
+            "mean": 0.0658,
+            "lo": 0.0547,
+            "hi": 0.0775
+          },
+          "recall": {
+            "mean": 0.368,
+            "lo": 0.3176,
+            "hi": 0.4192
+          },
+          "f1": {
+            "mean": 0.1116,
+            "lo": 0.0939,
+            "hi": 0.13
+          }
+        },
+        "Moderate": {
+          "precision": {
+            "mean": 0.7099,
+            "lo": 0.6903,
+            "hi": 0.7288
+          },
+          "recall": {
+            "mean": 0.3467,
+            "lo": 0.3321,
+            "hi": 0.3613
+          },
+          "f1": {
+            "mean": 0.4659,
+            "lo": 0.4505,
+            "hi": 0.4811
+          }
+        },
+        "Major": {
+          "precision": {
+            "mean": 0.3441,
+            "lo": 0.3252,
+            "hi": 0.362
+          },
+          "recall": {
+            "mean": 0.6042,
+            "lo": 0.5804,
+            "hi": 0.628
+          },
+          "f1": {
+            "mean": 0.4384,
+            "lo": 0.4187,
+            "hi": 0.4574
+          }
+        }
+      },
+      "mechanism_macro_auroc": {
+        "mean": 0.8237,
+        "lo": 0.7972,
+        "hi": 0.8458
+      }
+    },
+    "ablation_single_task": {
+      "accuracy": {
+        "mean": 0.8512,
+        "lo": 0.8449,
+        "hi": 0.8573
+      },
+      "macro_f1": {
+        "mean": 0.7268,
+        "lo": 0.716,
+        "hi": 0.7378
+      },
+      "severity_macro_auroc": {
+        "mean": 0.9713,
+        "lo": 0.9692,
+        "hi": 0.9733
+      },
+      "severity_per_class": {
+        "none": {
+          "precision": {
+            "mean": 0.9887,
+            "lo": 0.9861,
+            "hi": 0.9913
+          },
+          "recall": {
+            "mean": 0.9451,
+            "lo": 0.9398,
+            "hi": 0.9511
+          },
+          "f1": {
+            "mean": 0.9664,
+            "lo": 0.9633,
+            "hi": 0.9696
+          }
+        },
+        "Minor": {
+          "precision": {
+            "mean": 0.2923,
+            "lo": 0.2644,
+            "hi": 0.3212
+          },
+          "recall": {
+            "mean": 0.8934,
+            "lo": 0.8576,
+            "hi": 0.9274
+          },
+          "f1": {
+            "mean": 0.4402,
+            "lo": 0.4062,
+            "hi": 0.474
+          }
+        },
+        "Moderate": {
+          "precision": {
+            "mean": 0.882,
+            "lo": 0.8718,
+            "hi": 0.8924
+          },
+          "recall": {
+            "mean": 0.7327,
+            "lo": 0.7193,
+            "hi": 0.7447
+          },
+          "f1": {
+            "mean": 0.8004,
+            "lo": 0.7906,
+            "hi": 0.8092
+          }
+        },
+        "Major": {
+          "precision": {
+            "mean": 0.6193,
+            "lo": 0.5973,
+            "hi": 0.6412
+          },
+          "recall": {
+            "mean": 0.8056,
+            "lo": 0.7847,
+            "hi": 0.8254
+          },
+          "f1": {
+            "mean": 0.7002,
+            "lo": 0.6816,
+            "hi": 0.7173
+          }
+        }
+      }
+    },
+    "gnn": {
+      "accuracy": {
+        "mean": 0.8617,
+        "lo": 0.8558,
+        "hi": 0.8676
+      },
+      "macro_f1": {
+        "mean": 0.7476,
+        "lo": 0.7361,
+        "hi": 0.7587
+      },
+      "severity_macro_auroc": {
+        "mean": 0.9734,
+        "lo": 0.9711,
+        "hi": 0.9755
+      },
+      "severity_per_class": {
+        "none": {
+          "precision": {
+            "mean": 0.9872,
+            "lo": 0.9845,
+            "hi": 0.9899
+          },
+          "recall": {
+            "mean": 0.9504,
+            "lo": 0.9449,
+            "hi": 0.9559
+          },
+          "f1": {
+            "mean": 0.9684,
+            "lo": 0.9653,
+            "hi": 0.9716
+          }
+        },
+        "Minor": {
+          "precision": {
+            "mean": 0.3554,
+            "lo": 0.3234,
+            "hi": 0.3915
+          },
+          "recall": {
+            "mean": 0.8769,
+            "lo": 0.8381,
+            "hi": 0.9122
+          },
+          "f1": {
+            "mean": 0.5055,
+            "lo": 0.4698,
+            "hi": 0.5438
+          }
+        },
+        "Moderate": {
+          "precision": {
+            "mean": 0.8867,
+            "lo": 0.8772,
+            "hi": 0.8966
+          },
+          "recall": {
+            "mean": 0.7485,
+            "lo": 0.7362,
+            "hi": 0.7603
+          },
+          "f1": {
+            "mean": 0.8118,
+            "lo": 0.8031,
+            "hi": 0.8202
+          }
+        },
+        "Major": {
+          "precision": {
+            "mean": 0.6138,
+            "lo": 0.5929,
+            "hi": 0.6348
+          },
+          "recall": {
+            "mean": 0.8274,
+            "lo": 0.8085,
+            "hi": 0.8467
+          },
+          "f1": {
+            "mean": 0.7047,
+            "lo": 0.6872,
+            "hi": 0.7214
+          }
+        }
+      },
+      "mechanism_macro_auroc": {
+        "mean": 0.9478,
+        "lo": 0.9409,
+        "hi": 0.9547
+      }
+    },
+    "mlp": {
+      "accuracy": {
+        "mean": 0.9548,
+        "lo": 0.9509,
+        "hi": 0.9582
+      },
+      "macro_f1": {
+        "mean": 0.8955,
+        "lo": 0.8842,
+        "hi": 0.9065
+      },
+      "severity_macro_auroc": {
+        "mean": 0.9907,
+        "lo": 0.9886,
+        "hi": 0.9924
+      },
+      "severity_per_class": {
+        "none": {
+          "precision": {
+            "mean": 0.995,
+            "lo": 0.9932,
+            "hi": 0.9966
+          },
+          "recall": {
+            "mean": 0.9775,
+            "lo": 0.9741,
+            "hi": 0.9811
+          },
+          "f1": {
+            "mean": 0.9862,
+            "lo": 0.9841,
+            "hi": 0.9881
+          }
+        },
+        "Minor": {
+          "precision": {
+            "mean": 0.8709,
+            "lo": 0.8276,
+            "hi": 0.9102
+          },
+          "recall": {
+            "mean": 0.6751,
+            "lo": 0.6211,
+            "hi": 0.7281
+          },
+          "f1": {
+            "mean": 0.7603,
+            "lo": 0.718,
+            "hi": 0.8
+          }
+        },
+        "Moderate": {
+          "precision": {
+            "mean": 0.9166,
+            "lo": 0.9088,
+            "hi": 0.924
+          },
+          "recall": {
+            "mean": 0.9702,
+            "lo": 0.9653,
+            "hi": 0.9749
+          },
+          "f1": {
+            "mean": 0.9426,
+            "lo": 0.9377,
+            "hi": 0.9474
+          }
+        },
+        "Major": {
+          "precision": {
+            "mean": 0.9215,
+            "lo": 0.9074,
+            "hi": 0.9348
+          },
+          "recall": {
+            "mean": 0.8662,
+            "lo": 0.8484,
+            "hi": 0.8824
+          },
+          "f1": {
+            "mean": 0.893,
+            "lo": 0.8809,
+            "hi": 0.9039
+          }
+        }
+      },
+      "mechanism_macro_auroc": {
+        "mean": 0.9837,
+        "lo": 0.9747,
+        "hi": 0.9902
+      }
+    },
+    "rf": {
+      "accuracy": {
+        "mean": 0.8489,
+        "lo": 0.8428,
+        "hi": 0.8549
+      },
+      "macro_f1": {
+        "mean": 0.7072,
+        "lo": 0.6889,
+        "hi": 0.7223
+      },
+      "severity_macro_auroc": {
+        "mean": 0.9594,
+        "lo": 0.9562,
+        "hi": 0.9623
+      },
+      "severity_per_class": {
+        "none": {
+          "precision": {
+            "mean": 0.9137,
+            "lo": 0.9068,
+            "hi": 0.9204
+          },
+          "recall": {
+            "mean": 0.9418,
+            "lo": 0.9362,
+            "hi": 0.9475
+          },
+          "f1": {
+            "mean": 0.9276,
+            "lo": 0.9228,
+            "hi": 0.9321
+          }
+        },
+        "Minor": {
+          "precision": {
+            "mean": 0.8586,
+            "lo": 0.7928,
+            "hi": 0.9154
+          },
+          "recall": {
+            "mean": 0.3402,
+            "lo": 0.2867,
+            "hi": 0.3946
+          },
+          "f1": {
+            "mean": 0.4867,
+            "lo": 0.4233,
+            "hi": 0.5438
+          }
+        },
+        "Moderate": {
+          "precision": {
+            "mean": 0.7793,
+            "lo": 0.7679,
+            "hi": 0.7904
+          },
+          "recall": {
+            "mean": 0.8729,
+            "lo": 0.863,
+            "hi": 0.8827
+          },
+          "f1": {
+            "mean": 0.8234,
+            "lo": 0.8157,
+            "hi": 0.8315
+          }
+        },
+        "Major": {
+          "precision": {
+            "mean": 0.7737,
+            "lo": 0.7473,
+            "hi": 0.8016
+          },
+          "recall": {
+            "mean": 0.4782,
+            "lo": 0.454,
+            "hi": 0.5017
+          },
+          "f1": {
+            "mean": 0.591,
+            "lo": 0.5679,
+            "hi": 0.6136
+          }
+        }
+      },
+      "mechanism_macro_auroc": {
+        "mean": 0.9602,
+        "lo": 0.9493,
+        "hi": 0.9682
+      }
+    },
+    "xgb": {
+      "accuracy": {
+        "mean": 0.8899,
+        "lo": 0.8849,
+        "hi": 0.8954
+      },
+      "macro_f1": {
+        "mean": 0.7806,
+        "lo": 0.7661,
+        "hi": 0.7946
+      },
+      "severity_macro_auroc": {
+        "mean": 0.9733,
+        "lo": 0.9708,
+        "hi": 0.9755
+      },
+      "severity_per_class": {
+        "none": {
+          "precision": {
+            "mean": 0.9561,
+            "lo": 0.9512,
+            "hi": 0.9606
+          },
+          "recall": {
+            "mean": 0.9633,
+            "lo": 0.9591,
+            "hi": 0.9677
+          },
+          "f1": {
+            "mean": 0.9597,
+            "lo": 0.9565,
+            "hi": 0.9627
+          }
+        },
+        "Minor": {
+          "precision": {
+            "mean": 0.8058,
+            "lo": 0.7446,
+            "hi": 0.861
+          },
+          "recall": {
+            "mean": 0.4823,
+            "lo": 0.4237,
+            "hi": 0.538
+          },
+          "f1": {
+            "mean": 0.6029,
+            "lo": 0.5514,
+            "hi": 0.65
+          }
+        },
+        "Moderate": {
+          "precision": {
+            "mean": 0.8319,
+            "lo": 0.8223,
+            "hi": 0.8418
+          },
+          "recall": {
+            "mean": 0.9014,
+            "lo": 0.8926,
+            "hi": 0.9097
+          },
+          "f1": {
+            "mean": 0.8652,
+            "lo": 0.8583,
+            "hi": 0.8729
+          }
+        },
+        "Major": {
+          "precision": {
+            "mean": 0.7868,
+            "lo": 0.7638,
+            "hi": 0.8075
+          },
+          "recall": {
+            "mean": 0.6215,
+            "lo": 0.5991,
+            "hi": 0.6442
+          },
+          "f1": {
+            "mean": 0.6944,
+            "lo": 0.6761,
+            "hi": 0.7139
+          }
+        }
+      },
+      "mechanism_macro_auroc": {
+        "mean": 0.9738,
+        "lo": 0.9598,
+        "hi": 0.9822
+      }
+    }
+  },
+  "pairwise": {
+    "ablation_gnn_only vs ablation_pk_only": {
+      "mcnemar": {
+        "a_only_correct": 3528,
+        "b_only_correct": 746,
+        "n_total": 13002,
+        "p_value": 0.0
+      },
+      "accuracy_difference": {
+        "mean": 0.2141,
+        "lo": 0.2053,
+        "hi": 0.2238,
+        "significant": true
+      }
+    },
+    "ablation_gnn_only vs ablation_single_task": {
+      "mcnemar": {
+        "a_only_correct": 764,
+        "b_only_correct": 795,
+        "n_total": 13002,
+        "p_value": 0.447375
+      },
+      "accuracy_difference": {
+        "mean": -0.0024,
+        "lo": -0.0086,
+        "hi": 0.0034,
+        "significant": false
+      }
+    },
+    "ablation_gnn_only vs gnn": {
+      "mcnemar": {
+        "a_only_correct": 659,
+        "b_only_correct": 826,
+        "n_total": 13002,
+        "p_value": 1.6e-05
+      },
+      "accuracy_difference": {
+        "mean": -0.0129,
+        "lo": -0.0183,
+        "hi": -0.0072,
+        "significant": true
+      }
+    },
+    "ablation_gnn_only vs mlp": {
+      "mcnemar": {
+        "a_only_correct": 244,
+        "b_only_correct": 1622,
+        "n_total": 13002,
+        "p_value": 0.0
+      },
+      "accuracy_difference": {
+        "mean": -0.106,
+        "lo": -0.1121,
+        "hi": -0.0995,
+        "significant": true
+      }
+    },
+    "ablation_gnn_only vs rf": {
+      "mcnemar": {
+        "a_only_correct": 1290,
+        "b_only_correct": 1289,
+        "n_total": 13002,
+        "p_value": 1.0
+      },
+      "accuracy_difference": {
+        "mean": 0.0,
+        "lo": -0.0077,
+        "hi": 0.0078,
+        "significant": false
+      }
+    },
+    "ablation_gnn_only vs xgb": {
+      "mcnemar": {
+        "a_only_correct": 787,
+        "b_only_correct": 1322,
+        "n_total": 13002,
+        "p_value": 0.0
+      },
+      "accuracy_difference": {
+        "mean": -0.0411,
+        "lo": -0.0482,
+        "hi": -0.0345,
+        "significant": true
+      }
+    },
+    "ablation_pk_only vs ablation_single_task": {
+      "mcnemar": {
+        "a_only_correct": 526,
+        "b_only_correct": 3339,
+        "n_total": 13002,
+        "p_value": 0.0
+      },
+      "accuracy_difference": {
+        "mean": -0.2164,
+        "lo": -0.2249,
+        "hi": -0.2075,
+        "significant": true
+      }
+    },
+    "ablation_pk_only vs gnn": {
+      "mcnemar": {
+        "a_only_correct": 509,
+        "b_only_correct": 3458,
+        "n_total": 13002,
+        "p_value": 0.0
+      },
+      "accuracy_difference": {
+        "mean": -0.2269,
+        "lo": -0.236,
+        "hi": -0.2188,
+        "significant": true
+      }
+    },
+    "ablation_pk_only vs mlp": {
+      "mcnemar": {
+        "a_only_correct": 196,
+        "b_only_correct": 4356,
+        "n_total": 13002,
+        "p_value": 0.0
+      },
+      "accuracy_difference": {
+        "mean": -0.3199,
+        "lo": -0.3286,
+        "hi": -0.3117,
+        "significant": true
+      }
+    },
+    "ablation_pk_only vs rf": {
+      "mcnemar": {
+        "a_only_correct": 582,
+        "b_only_correct": 3363,
+        "n_total": 13002,
+        "p_value": 0.0
+      },
+      "accuracy_difference": {
+        "mean": -0.2139,
+        "lo": -0.2228,
+        "hi": -0.2051,
+        "significant": true
+      }
+    },
+    "ablation_pk_only vs xgb": {
+      "mcnemar": {
+        "a_only_correct": 416,
+        "b_only_correct": 3733,
+        "n_total": 13002,
+        "p_value": 0.0
+      },
+      "accuracy_difference": {
+        "mean": -0.255,
+        "lo": -0.2634,
+        "hi": -0.2467,
+        "significant": true
+      }
+    },
+    "ablation_single_task vs gnn": {
+      "mcnemar": {
+        "a_only_correct": 497,
+        "b_only_correct": 633,
+        "n_total": 13002,
+        "p_value": 5.9e-05
+      },
+      "accuracy_difference": {
+        "mean": -0.0105,
+        "lo": -0.0155,
+        "hi": -0.0057,
+        "significant": true
+      }
+    },
+    "ablation_single_task vs mlp": {
+      "mcnemar": {
+        "a_only_correct": 237,
+        "b_only_correct": 1584,
+        "n_total": 13002,
+        "p_value": 0.0
+      },
+      "accuracy_difference": {
+        "mean": -0.1037,
+        "lo": -0.1098,
+        "hi": -0.097,
+        "significant": true
+      }
+    },
+    "ablation_single_task vs rf": {
+      "mcnemar": {
+        "a_only_correct": 1267,
+        "b_only_correct": 1235,
+        "n_total": 13002,
+        "p_value": 0.535421
+      },
+      "accuracy_difference": {
+        "mean": 0.0027,
+        "lo": -0.0043,
+        "hi": 0.0104,
+        "significant": false
+      }
+    },
+    "ablation_single_task vs xgb": {
+      "mcnemar": {
+        "a_only_correct": 709,
+        "b_only_correct": 1213,
+        "n_total": 13002,
+        "p_value": 0.0
+      },
+      "accuracy_difference": {
+        "mean": -0.0389,
+        "lo": -0.0459,
+        "hi": -0.0322,
+        "significant": true
+      }
+    },
+    "gnn vs mlp": {
+      "mcnemar": {
+        "a_only_correct": 247,
+        "b_only_correct": 1458,
+        "n_total": 13002,
+        "p_value": 0.0
+      },
+      "accuracy_difference": {
+        "mean": -0.093,
+        "lo": -0.0985,
+        "hi": -0.0874,
+        "significant": true
+      }
+    },
+    "gnn vs rf": {
+      "mcnemar": {
+        "a_only_correct": 1285,
+        "b_only_correct": 1117,
+        "n_total": 13002,
+        "p_value": 0.000656
+      },
+      "accuracy_difference": {
+        "mean": 0.0129,
+        "lo": 0.0056,
+        "hi": 0.0203,
+        "significant": true
+      }
+    },
+    "gnn vs xgb": {
+      "mcnemar": {
+        "a_only_correct": 739,
+        "b_only_correct": 1107,
+        "n_total": 13002,
+        "p_value": 0.0
+      },
+      "accuracy_difference": {
+        "mean": -0.0284,
+        "lo": -0.0348,
+        "hi": -0.0222,
+        "significant": true
+      }
+    },
+    "mlp vs rf": {
+      "mcnemar": {
+        "a_only_correct": 1516,
+        "b_only_correct": 137,
+        "n_total": 13002,
+        "p_value": 0.0
+      },
+      "accuracy_difference": {
+        "mean": 0.1058,
+        "lo": 0.1001,
+        "hi": 0.1115,
+        "significant": true
+      }
+    },
+    "mlp vs xgb": {
+      "mcnemar": {
+        "a_only_correct": 990,
+        "b_only_correct": 147,
+        "n_total": 13002,
+        "p_value": 0.0
+      },
+      "accuracy_difference": {
+        "mean": 0.0648,
+        "lo": 0.0599,
+        "hi": 0.0695,
+        "significant": true
+      }
+    },
+    "rf vs xgb": {
+      "mcnemar": {
+        "a_only_correct": 265,
+        "b_only_correct": 801,
+        "n_total": 13002,
+        "p_value": 0.0
+      },
+      "accuracy_difference": {
+        "mean": -0.0412,
+        "lo": -0.0464,
+        "hi": -0.0361,
+        "significant": true
+      }
+    }
+  },
+  "n_bootstrap": 1000,
+  "alpha": 0.05
+}

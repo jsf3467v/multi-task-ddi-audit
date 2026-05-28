@@ -1,0 +1,758 @@
+{
+  "ablation_gnn_only vs ablation_pk_only": {
+    "matrix": {
+      "both_correct": 7509,
+      "a_only_correct": 3528,
+      "b_only_correct": 746,
+      "both_wrong": 1219,
+      "n_total": 13002,
+      "agreement_rate": 0.63
+    },
+    "by_class": {
+      "none": {
+        "n_disagreement": 1131,
+        "a_correct": 631,
+        "b_correct": 335,
+        "neither_correct": 165
+      },
+      "Minor": {
+        "n_disagreement": 185,
+        "a_correct": 158,
+        "b_correct": 10,
+        "neither_correct": 17
+      },
+      "Moderate": {
+        "n_disagreement": 2823,
+        "a_correct": 2258,
+        "b_correct": 270,
+        "neither_correct": 295
+      },
+      "Major": {
+        "n_disagreement": 672,
+        "a_correct": 481,
+        "b_correct": 131,
+        "neither_correct": 60
+      }
+    }
+  },
+  "ablation_gnn_only vs ablation_single_task": {
+    "matrix": {
+      "both_correct": 10273,
+      "a_only_correct": 764,
+      "b_only_correct": 795,
+      "both_wrong": 1170,
+      "n_total": 13002,
+      "agreement_rate": 0.871
+    },
+    "by_class": {
+      "none": {
+        "n_disagreement": 582,
+        "a_correct": 149,
+        "b_correct": 394,
+        "neither_correct": 39
+      },
+      "Minor": {
+        "n_disagreement": 30,
+        "a_correct": 8,
+        "b_correct": 19,
+        "neither_correct": 3
+      },
+      "Moderate": {
+        "n_disagreement": 824,
+        "a_correct": 476,
+        "b_correct": 295,
+        "neither_correct": 53
+      },
+      "Major": {
+        "n_disagreement": 241,
+        "a_correct": 131,
+        "b_correct": 87,
+        "neither_correct": 23
+      }
+    }
+  },
+  "ablation_gnn_only vs gnn": {
+    "matrix": {
+      "both_correct": 10378,
+      "a_only_correct": 659,
+      "b_only_correct": 826,
+      "both_wrong": 1139,
+      "n_total": 13002,
+      "agreement_rate": 0.8782
+    },
+    "by_class": {
+      "none": {
+        "n_disagreement": 559,
+        "a_correct": 127,
+        "b_correct": 405,
+        "neither_correct": 27
+      },
+      "Minor": {
+        "n_disagreement": 25,
+        "a_correct": 8,
+        "b_correct": 14,
+        "neither_correct": 3
+      },
+      "Moderate": {
+        "n_disagreement": 807,
+        "a_correct": 431,
+        "b_correct": 324,
+        "neither_correct": 52
+      },
+      "Major": {
+        "n_disagreement": 193,
+        "a_correct": 93,
+        "b_correct": 83,
+        "neither_correct": 17
+      }
+    }
+  },
+  "ablation_gnn_only vs mlp": {
+    "matrix": {
+      "both_correct": 10793,
+      "a_only_correct": 244,
+      "b_only_correct": 1622,
+      "both_wrong": 343,
+      "n_total": 13002,
+      "agreement_rate": 0.853
+    },
+    "by_class": {
+      "none": {
+        "n_disagreement": 579,
+        "a_correct": 56,
+        "b_correct": 510,
+        "neither_correct": 13
+      },
+      "Minor": {
+        "n_disagreement": 68,
+        "a_correct": 58,
+        "b_correct": 3,
+        "neither_correct": 7
+      },
+      "Moderate": {
+        "n_disagreement": 1011,
+        "a_correct": 32,
+        "b_correct": 962,
+        "neither_correct": 17
+      },
+      "Major": {
+        "n_disagreement": 253,
+        "a_correct": 98,
+        "b_correct": 147,
+        "neither_correct": 8
+      }
+    }
+  },
+  "ablation_gnn_only vs rf": {
+    "matrix": {
+      "both_correct": 9938,
+      "a_only_correct": 1099,
+      "b_only_correct": 1142,
+      "both_wrong": 823,
+      "n_total": 13002,
+      "agreement_rate": 0.8143
+    },
+    "by_class": {
+      "none": {
+        "n_disagreement": 637,
+        "a_correct": 158,
+        "b_correct": 447,
+        "neither_correct": 32
+      },
+      "Minor": {
+        "n_disagreement": 92,
+        "a_correct": 81,
+        "b_correct": 3,
+        "neither_correct": 8
+      },
+      "Moderate": {
+        "n_disagreement": 1300,
+        "a_correct": 601,
+        "b_correct": 607,
+        "neither_correct": 92
+      },
+      "Major": {
+        "n_disagreement": 386,
+        "a_correct": 259,
+        "b_correct": 85,
+        "neither_correct": 42
+      }
+    }
+  },
+  "ablation_gnn_only vs xgb": {
+    "matrix": {
+      "both_correct": 10174,
+      "a_only_correct": 863,
+      "b_only_correct": 1398,
+      "both_wrong": 567,
+      "n_total": 13002,
+      "agreement_rate": 0.8176
+    },
+    "by_class": {
+      "none": {
+        "n_disagreement": 619,
+        "a_correct": 108,
+        "b_correct": 487,
+        "neither_correct": 24
+      },
+      "Minor": {
+        "n_disagreement": 140,
+        "a_correct": 132,
+        "b_correct": 1,
+        "neither_correct": 7
+      },
+      "Moderate": {
+        "n_disagreement": 1097,
+        "a_correct": 175,
+        "b_correct": 882,
+        "neither_correct": 40
+      },
+      "Major": {
+        "n_disagreement": 515,
+        "a_correct": 448,
+        "b_correct": 28,
+        "neither_correct": 39
+      }
+    }
+  },
+  "ablation_pk_only vs ablation_single_task": {
+    "matrix": {
+      "both_correct": 7729,
+      "a_only_correct": 526,
+      "b_only_correct": 3339,
+      "both_wrong": 1408,
+      "n_total": 13002,
+      "agreement_rate": 0.6609
+    },
+    "by_class": {
+      "none": {
+        "n_disagreement": 886,
+        "a_correct": 97,
+        "b_correct": 638,
+        "neither_correct": 151
+      },
+      "Minor": {
+        "n_disagreement": 185,
+        "a_correct": 6,
+        "b_correct": 165,
+        "neither_correct": 14
+      },
+      "Moderate": {
+        "n_disagreement": 2676,
+        "a_correct": 278,
+        "b_correct": 2085,
+        "neither_correct": 313
+      },
+      "Major": {
+        "n_disagreement": 662,
+        "a_correct": 145,
+        "b_correct": 451,
+        "neither_correct": 66
+      }
+    }
+  },
+  "ablation_pk_only vs gnn": {
+    "matrix": {
+      "both_correct": 7746,
+      "a_only_correct": 509,
+      "b_only_correct": 3458,
+      "both_wrong": 1289,
+      "n_total": 13002,
+      "agreement_rate": 0.6557
+    },
+    "by_class": {
+      "none": {
+        "n_disagreement": 882,
+        "a_correct": 86,
+        "b_correct": 660,
+        "neither_correct": 136
+      },
+      "Minor": {
+        "n_disagreement": 186,
+        "a_correct": 8,
+        "b_correct": 162,
+        "neither_correct": 16
+      },
+      "Moderate": {
+        "n_disagreement": 2748,
+        "a_correct": 284,
+        "b_correct": 2165,
+        "neither_correct": 299
+      },
+      "Major": {
+        "n_disagreement": 661,
+        "a_correct": 131,
+        "b_correct": 471,
+        "neither_correct": 59
+      }
+    }
+  },
+  "ablation_pk_only vs mlp": {
+    "matrix": {
+      "both_correct": 8059,
+      "a_only_correct": 196,
+      "b_only_correct": 4356,
+      "both_wrong": 391,
+      "n_total": 13002,
+      "agreement_rate": 0.6364
+    },
+    "by_class": {
+      "none": {
+        "n_disagreement": 881,
+        "a_correct": 39,
+        "b_correct": 789,
+        "neither_correct": 53
+      },
+      "Minor": {
+        "n_disagreement": 187,
+        "a_correct": 27,
+        "b_correct": 120,
+        "neither_correct": 40
+      },
+      "Moderate": {
+        "n_disagreement": 3006,
+        "a_correct": 26,
+        "b_correct": 2944,
+        "neither_correct": 36
+      },
+      "Major": {
+        "n_disagreement": 654,
+        "a_correct": 104,
+        "b_correct": 503,
+        "neither_correct": 47
+      }
+    }
+  },
+  "ablation_pk_only vs rf": {
+    "matrix": {
+      "both_correct": 7868,
+      "a_only_correct": 387,
+      "b_only_correct": 3212,
+      "both_wrong": 1535,
+      "n_total": 13002,
+      "agreement_rate": 0.6862
+    },
+    "by_class": {
+      "none": {
+        "n_disagreement": 789,
+        "a_correct": 35,
+        "b_correct": 620,
+        "neither_correct": 134
+      },
+      "Minor": {
+        "n_disagreement": 168,
+        "a_correct": 31,
+        "b_correct": 101,
+        "neither_correct": 36
+      },
+      "Moderate": {
+        "n_disagreement": 2521,
+        "a_correct": 153,
+        "b_correct": 2147,
+        "neither_correct": 221
+      },
+      "Major": {
+        "n_disagreement": 602,
+        "a_correct": 168,
+        "b_correct": 344,
+        "neither_correct": 90
+      }
+    }
+  },
+  "ablation_pk_only vs xgb": {
+    "matrix": {
+      "both_correct": 7790,
+      "a_only_correct": 465,
+      "b_only_correct": 3782,
+      "both_wrong": 965,
+      "n_total": 13002,
+      "agreement_rate": 0.6462
+    },
+    "by_class": {
+      "none": {
+        "n_disagreement": 810,
+        "a_correct": 16,
+        "b_correct": 691,
+        "neither_correct": 103
+      },
+      "Minor": {
+        "n_disagreement": 195,
+        "a_correct": 57,
+        "b_correct": 74,
+        "neither_correct": 64
+      },
+      "Moderate": {
+        "n_disagreement": 2833,
+        "a_correct": 36,
+        "b_correct": 2731,
+        "neither_correct": 66
+      },
+      "Major": {
+        "n_disagreement": 762,
+        "a_correct": 356,
+        "b_correct": 286,
+        "neither_correct": 120
+      }
+    }
+  },
+  "ablation_single_task vs gnn": {
+    "matrix": {
+      "both_correct": 10571,
+      "a_only_correct": 497,
+      "b_only_correct": 633,
+      "both_wrong": 1301,
+      "n_total": 13002,
+      "agreement_rate": 0.9022
+    },
+    "by_class": {
+      "none": {
+        "n_disagreement": 279,
+        "a_correct": 96,
+        "b_correct": 129,
+        "neither_correct": 54
+      },
+      "Minor": {
+        "n_disagreement": 23,
+        "a_correct": 13,
+        "b_correct": 8,
+        "neither_correct": 2
+      },
+      "Moderate": {
+        "n_disagreement": 781,
+        "a_correct": 328,
+        "b_correct": 402,
+        "neither_correct": 51
+      },
+      "Major": {
+        "n_disagreement": 189,
+        "a_correct": 60,
+        "b_correct": 94,
+        "neither_correct": 35
+      }
+    }
+  },
+  "ablation_single_task vs mlp": {
+    "matrix": {
+      "both_correct": 10831,
+      "a_only_correct": 237,
+      "b_only_correct": 1584,
+      "both_wrong": 350,
+      "n_total": 13002,
+      "agreement_rate": 0.855
+    },
+    "by_class": {
+      "none": {
+        "n_disagreement": 346,
+        "a_correct": 60,
+        "b_correct": 269,
+        "neither_correct": 17
+      },
+      "Minor": {
+        "n_disagreement": 78,
+        "a_correct": 68,
+        "b_correct": 2,
+        "neither_correct": 8
+      },
+      "Moderate": {
+        "n_disagreement": 1179,
+        "a_correct": 27,
+        "b_correct": 1138,
+        "neither_correct": 14
+      },
+      "Major": {
+        "n_disagreement": 282,
+        "a_correct": 82,
+        "b_correct": 175,
+        "neither_correct": 25
+      }
+    }
+  },
+  "ablation_single_task vs rf": {
+    "matrix": {
+      "both_correct": 10014,
+      "a_only_correct": 1054,
+      "b_only_correct": 1066,
+      "both_wrong": 868,
+      "n_total": 13002,
+      "agreement_rate": 0.821
+    },
+    "by_class": {
+      "none": {
+        "n_disagreement": 433,
+        "a_correct": 175,
+        "b_correct": 219,
+        "neither_correct": 39
+      },
+      "Minor": {
+        "n_disagreement": 99,
+        "a_correct": 91,
+        "b_correct": 2,
+        "neither_correct": 6
+      },
+      "Moderate": {
+        "n_disagreement": 1398,
+        "a_correct": 550,
+        "b_correct": 737,
+        "neither_correct": 111
+      },
+      "Major": {
+        "n_disagreement": 397,
+        "a_correct": 238,
+        "b_correct": 108,
+        "neither_correct": 51
+      }
+    }
+  },
+  "ablation_single_task vs xgb": {
+    "matrix": {
+      "both_correct": 10277,
+      "a_only_correct": 791,
+      "b_only_correct": 1295,
+      "both_wrong": 639,
+      "n_total": 13002,
+      "agreement_rate": 0.8278
+    },
+    "by_class": {
+      "none": {
+        "n_disagreement": 347,
+        "a_correct": 89,
+        "b_correct": 223,
+        "neither_correct": 35
+      },
+      "Minor": {
+        "n_disagreement": 154,
+        "a_correct": 144,
+        "b_correct": 2,
+        "neither_correct": 8
+      },
+      "Moderate": {
+        "n_disagreement": 1226,
+        "a_correct": 148,
+        "b_correct": 1036,
+        "neither_correct": 42
+      },
+      "Major": {
+        "n_disagreement": 512,
+        "a_correct": 410,
+        "b_correct": 34,
+        "neither_correct": 68
+      }
+    }
+  },
+  "gnn vs mlp": {
+    "matrix": {
+      "both_correct": 10957,
+      "a_only_correct": 247,
+      "b_only_correct": 1458,
+      "both_wrong": 340,
+      "n_total": 13002,
+      "agreement_rate": 0.864
+    },
+    "by_class": {
+      "none": {
+        "n_disagreement": 332,
+        "a_correct": 68,
+        "b_correct": 244,
+        "neither_correct": 20
+      },
+      "Minor": {
+        "n_disagreement": 78,
+        "a_correct": 64,
+        "b_correct": 3,
+        "neither_correct": 11
+      },
+      "Moderate": {
+        "n_disagreement": 1102,
+        "a_correct": 26,
+        "b_correct": 1063,
+        "neither_correct": 13
+      },
+      "Major": {
+        "n_disagreement": 256,
+        "a_correct": 89,
+        "b_correct": 148,
+        "neither_correct": 19
+      }
+    }
+  },
+  "gnn vs rf": {
+    "matrix": {
+      "both_correct": 10139,
+      "a_only_correct": 1065,
+      "b_only_correct": 941,
+      "both_wrong": 857,
+      "n_total": 13002,
+      "agreement_rate": 0.832
+    },
+    "by_class": {
+      "none": {
+        "n_disagreement": 402,
+        "a_correct": 181,
+        "b_correct": 192,
+        "neither_correct": 29
+      },
+      "Minor": {
+        "n_disagreement": 99,
+        "a_correct": 86,
+        "b_correct": 2,
+        "neither_correct": 11
+      },
+      "Moderate": {
+        "n_disagreement": 1301,
+        "a_correct": 547,
+        "b_correct": 660,
+        "neither_correct": 94
+      },
+      "Major": {
+        "n_disagreement": 382,
+        "a_correct": 251,
+        "b_correct": 87,
+        "neither_correct": 44
+      }
+    }
+  },
+  "gnn vs xgb": {
+    "matrix": {
+      "both_correct": 10394,
+      "a_only_correct": 810,
+      "b_only_correct": 1178,
+      "both_wrong": 620,
+      "n_total": 13002,
+      "agreement_rate": 0.8366
+    },
+    "by_class": {
+      "none": {
+        "n_disagreement": 322,
+        "a_correct": 92,
+        "b_correct": 193,
+        "neither_correct": 37
+      },
+      "Minor": {
+        "n_disagreement": 150,
+        "a_correct": 138,
+        "b_correct": 1,
+        "neither_correct": 11
+      },
+      "Moderate": {
+        "n_disagreement": 1137,
+        "a_correct": 144,
+        "b_correct": 958,
+        "neither_correct": 35
+      },
+      "Major": {
+        "n_disagreement": 515,
+        "a_correct": 436,
+        "b_correct": 26,
+        "neither_correct": 53
+      }
+    }
+  },
+  "mlp vs rf": {
+    "matrix": {
+      "both_correct": 10924,
+      "a_only_correct": 1491,
+      "b_only_correct": 156,
+      "both_wrong": 431,
+      "n_total": 13002,
+      "agreement_rate": 0.8678
+    },
+    "by_class": {
+      "none": {
+        "n_disagreement": 280,
+        "a_correct": 216,
+        "b_correct": 51,
+        "neither_correct": 13
+      },
+      "Minor": {
+        "n_disagreement": 71,
+        "a_correct": 36,
+        "b_correct": 13,
+        "neither_correct": 22
+      },
+      "Moderate": {
+        "n_disagreement": 1013,
+        "a_correct": 961,
+        "b_correct": 37,
+        "neither_correct": 15
+      },
+      "Major": {
+        "n_disagreement": 355,
+        "a_correct": 278,
+        "b_correct": 55,
+        "neither_correct": 22
+      }
+    }
+  },
+  "mlp vs xgb": {
+    "matrix": {
+      "both_correct": 11421,
+      "a_only_correct": 994,
+      "b_only_correct": 151,
+      "both_wrong": 436,
+      "n_total": 13002,
+      "agreement_rate": 0.9086
+    },
+    "by_class": {
+      "none": {
+        "n_disagreement": 201,
+        "a_correct": 133,
+        "b_correct": 58,
+        "neither_correct": 10
+      },
+      "Minor": {
+        "n_disagreement": 87,
+        "a_correct": 77,
+        "b_correct": 1,
+        "neither_correct": 9
+      },
+      "Moderate": {
+        "n_disagreement": 364,
+        "a_correct": 288,
+        "b_correct": 65,
+        "neither_correct": 11
+      },
+      "Major": {
+        "n_disagreement": 537,
+        "a_correct": 496,
+        "b_correct": 27,
+        "neither_correct": 14
+      }
+    }
+  },
+  "rf vs xgb": {
+    "matrix": {
+      "both_correct": 10610,
+      "a_only_correct": 470,
+      "b_only_correct": 962,
+      "both_wrong": 960,
+      "n_total": 13002,
+      "agreement_rate": 0.8831
+    },
+    "by_class": {
+      "none": {
+        "n_disagreement": 235,
+        "a_correct": 68,
+        "b_correct": 158,
+        "neither_correct": 9
+      },
+      "Minor": {
+        "n_disagreement": 91,
+        "a_correct": 59,
+        "b_correct": 6,
+        "neither_correct": 26
+      },
+      "Moderate": {
+        "n_disagreement": 788,
+        "a_correct": 38,
+        "b_correct": 739,
+        "neither_correct": 11
+      },
+      "Major": {
+        "n_disagreement": 406,
+        "a_correct": 305,
+        "b_correct": 59,
+        "neither_correct": 42
+      }
+    }
+  }
+}

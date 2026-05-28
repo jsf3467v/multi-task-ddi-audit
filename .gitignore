@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
+.idea/
+venv/
+.venv/
+Datasets/raw/
+Datasets/processed/
+models/
+results/predictions/
+Text Terminal Outputs/
+MLHC2026-ResearchTrack-Template/
+Papers/
+Prompt/
+EDA/EDA-2.ipynb

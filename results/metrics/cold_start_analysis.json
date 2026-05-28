@@ -1,0 +1,142 @@
+{
+  "partitions": {
+    "ablation_gnn_only": {
+      "warm_warm": {
+        "n": 12997,
+        "accuracy": 0.8488,
+        "macro_f1": 0.7418,
+        "macro_auroc": 0.9703,
+        "macro_auprc": 0.8622,
+        "ece": 0.0099,
+        "mech_macro_auroc": 0.9473
+      },
+      "warm_cold": {
+        "n": 5,
+        "skipped": true
+      },
+      "cold_cold": {
+        "n": 0,
+        "skipped": true
+      }
+    },
+    "ablation_pk_only": {
+      "warm_warm": {
+        "n": 12997,
+        "accuracy": 0.6348,
+        "macro_f1": 0.4718,
+        "macro_auroc": 0.8282,
+        "macro_auprc": 0.5024,
+        "ece": 0.1055,
+        "mech_macro_auroc": 0.8234
+      },
+      "warm_cold": {
+        "n": 5,
+        "skipped": true
+      },
+      "cold_cold": {
+        "n": 0,
+        "skipped": true
+      }
+    },
+    "ablation_single_task": {
+      "warm_warm": {
+        "n": 12997,
+        "accuracy": 0.8512,
+        "macro_f1": 0.727,
+        "macro_auroc": 0.9713,
+        "macro_auprc": 0.8534,
+        "ece": 0.0085
+      },
+      "warm_cold": {
+        "n": 5,
+        "skipped": true
+      },
+      "cold_cold": {
+        "n": 0,
+        "skipped": true
+      }
+    },
+    "gnn": {
+      "warm_warm": {
+        "n": 12997,
+        "accuracy": 0.8617,
+        "macro_f1": 0.748,
+        "macro_auroc": 0.9734,
+        "macro_auprc": 0.8604,
+        "ece": 0.0083,
+        "mech_macro_auroc": 0.9476
+      },
+      "warm_cold": {
+        "n": 5,
+        "skipped": true
+      },
+      "cold_cold": {
+        "n": 0,
+        "skipped": true
+      }
+    },
+    "mlp": {
+      "warm_warm": {
+        "n": 12997,
+        "accuracy": 0.9548,
+        "macro_f1": 0.8958,
+        "macro_auroc": 0.9906,
+        "macro_auprc": 0.9415,
+        "ece": 0.011,
+        "mech_macro_auroc": 0.9837
+      },
+      "warm_cold": {
+        "n": 5,
+        "skipped": true
+      },
+      "cold_cold": {
+        "n": 0,
+        "skipped": true
+      }
+    },
+    "rf": {
+      "warm_warm": {
+        "n": 12997,
+        "accuracy": 0.8487,
+        "macro_f1": 0.7074,
+        "macro_auroc": 0.9594,
+        "macro_auprc": 0.8134,
+        "ece": 0.0168,
+        "mech_macro_auroc": 0.9601
+      },
+      "warm_cold": {
+        "n": 5,
+        "skipped": true
+      },
+      "cold_cold": {
+        "n": 0,
+        "skipped": true
+      }
+    },
+    "xgb": {
+      "warm_warm": {
+        "n": 12997,
+        "accuracy": 0.89,
+        "macro_f1": 0.7811,
+        "macro_auroc": 0.9733,
+        "macro_auprc": 0.8471,
+        "ece": 0.0137,
+        "mech_macro_auroc": 0.9737
+      },
+      "warm_cold": {
+        "n": 5,
+        "skipped": true
+      },
+      "cold_cold": {
+        "n": 0,
+        "skipped": true
+      }
+    }
+  },
+  "partition_sizes": {
+    "warm_warm": 12997,
+    "warm_cold": 5,
+    "cold_cold": 0
+  },
+  "min_subset_n": 10
+}
