@@ -1,3 +1,5 @@
+[![CI](https://github.com/jsf3467v/multi-task-ddi-audit/actions/workflows/ci.yml/badge.svg)](https://github.com/jsf3467v/multi-task-ddi-audit/actions/workflows/ci.yml)
+
 # Multi-task DDI Benchmark Audit for Tuberculosis-HIV Pharmacotherapy
 
 A methodology audit of a multi-task drug-drug interaction (DDI) prediction benchmark constructed from DrugBank and DDInter, focused on tuberculosis-HIV pharmacotherapy. Seven model variants (a full GNN+PK model, three GNN ablations, and three feature-based baselines) serve as instruments to surface three patterns by which standard benchmark assembly choices systematically disadvantage drugs central to global health.
