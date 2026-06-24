@@ -10,13 +10,13 @@ This is a final capstone project in AI in Healthcare at Johns Hopkins University
 
 ## Findings
 
-**1. Cross-database name resolution silently omits drugs labeled with WHO international nonproprietary names.** Merging DDInter with DrugBank based on exact string matches removed 1,824 documented interactions, about 0.82% of the 222,383 DDInter records. This included all 284 pairs involving rifampin, the most clinically significant CYP3A4 inducer used in TB treatment. The discrepancy stems from structural differences: DDInter uses WHO INN names (`rifampicin`, `salbutamol'), whereas DrugBank uses American generic names (`rifampin`, `albuterol`). An alias mapping recovered four matchable mismatches with rifampicin, salbutamol, interferon alfa-2a, and a COVID-19 vaccine name variant—resolving all but 2 of the interactions initially dropped. Drugs registered by WHO INN are more likely to be affected.
+**1. Cross-database name resolution silently omits drugs labeled with WHO international nonproprietary names.** Merging DDInter with DrugBank based on exact string matches removed 1,824 documented interactions, about 0.82% of the 222,383 DDInter records. This included all 284 pairs involving rifampin, the most clinically significant CYP3A4 inducer used in TB treatment. The discrepancy stems from structural differences: DDInter uses WHO INN names (`rifampicin`, `salbutamol`), whereas DrugBank uses American generic names (`rifampin`, `albuterol`). An alias mapping recovered four matchable mismatches with rifampicin, salbutamol, interferon alfa-2a, and a COVID-19 vaccine name variant, resolving all but 2 of the interactions initially dropped. Drugs registered by WHO INN are more likely to be affected.
 
 **2. Random pair-level splits with broad-pool negative sampling saturate the drug space and make cold-start evaluation structurally impossible.** Of 13,002 test pairs, 12,997 (99.96%) are warm-warm (both drugs appear in training), 5 are warm-cold, and 0 are cold-cold. The benchmark cannot answer whether a model trained on it generalizes to a novel drug. Newer agents in current WHO TB and HIV guidelines (delamanid, pretomanid, dolutegravir) lack sufficient test coverage under this design.
 
-**3. Aggregate accuracy masks reveal architecture-specific failure modes in rare severity classes.** The complete GNN+PK model and the MLP ensemble display different F1 scores on the rare Minor class (0.51 vs 0.76), due to *opposite* mechanisms. GNN+PK features high recall but low precision for Minor (R = 0.88, P = 0.36), whereas the MLP exhibits high precision but lower recall (P = 0.87, R = 0.68). Bootstrap 95% confidence intervals for per-class precision do not overlap, indicating statistically distinct failure modes between the two architectures. In clinical use, they would produce qualitatively different alert behaviors despite similar benchmark performance.
+**3. Aggregate accuracy masks architecture-specific failure modes in rare severity classes.** The complete GNN+PK model and the MLP ensemble display different F1 scores on the rare Minor class (0.51 vs 0.76), due to *opposite* mechanisms. GNN+PK features high recall but low precision for Minor (R = 0.88, P = 0.36), whereas the MLP exhibits high precision but lower recall (P = 0.87, R = 0.68). Bootstrap 95% confidence intervals for per-class precision do not overlap, indicating statistically distinct failure modes between the two architectures. In clinical use, they would produce qualitatively different alert behaviors despite similar benchmark performance.
 
-**A methodological note.** During the audit, indirect label leakage in the pharmacokinetic feature vector was recognized and addressed. The CYP-inducer and CYP-inhibitor flags showed 2.2× and 2.5× increases in their respective mechanism labels, as both are derived from the same DrugBank curation. Twenty of the original thirty PK columns were eliminated, and all reported outcomes now utilize the 10-dimensional leakage-corrected vector.
+**A methodological note.** During the audit, indirect label leakage in the pharmacokinetic feature vector was recognized and addressed. Pairs carrying a CYP-inducer flag were 2.2 times more likely to carry a CYP induction label, and pairs carrying a CYP-inhibitor flag were 2.5 times more likely to carry a CYP inhibition label, because both originate from the same DrugBank curation. Twenty of the original thirty PK columns were removed, and all reported results use the 10-dimensional leakage-corrected vector.
 
 ## Headline results
 
@@ -179,9 +179,11 @@ The GNN encoder uses one-hot atom (49-dim) and bond (14-dim) features with no pr
 
 ## Paper
 
-## Paper
+The full write-up is in [`paper.pdf`](paper.pdf). Section 4 documents the data pipeline along with the alias-correction and PK-leakage discoveries. Section 5 presents the three audit findings with per-tier and per-class breakdowns. Section 6 discusses implications for clinical decision support and regulatory frameworks.
 
-The full write-up is in [`paper.pdf`](https://huggingface.co/jsf3467v/multi-task-ddi-audit/blob/main/paper.pdf) on Hugging Face. Section 4 documents the data pipeline along with the alias-correction and PK-leakage discoveries. Section 5 presents the three audit findings with per-tier and per-class breakdowns. Section 6 discusses implications for clinical decision support and regulatory frameworks.
+## Model checkpoints
+
+The trained GNN and ablation checkpoints are on [Hugging Face](https://huggingface.co/jsf3467v/multi-task-ddi-audit). They are released only so the audit results can be reproduced, not for any clinical use.
 
 ## Citation
 
