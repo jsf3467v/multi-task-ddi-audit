@@ -179,7 +179,9 @@ The GNN encoder uses one-hot atom (49-dim) and bond (14-dim) features with no pr
 
 ## Paper
 
-The full write-up is in paper.pdf, also available on Hugging Face. Section 4 documents the data pipeline along with the alias-correction and PK-leakage discoveries. Section 5 presents the three audit findings with per-tier and per-class breakdowns. Section 6 discusses implications for clinical decision support and regulatory frameworks.
+## Paper
+
+The full write-up is in [`paper.pdf`](https://huggingface.co/jsf3467v/multi-task-ddi-audit/blob/main/paper.pdf) on Hugging Face. Section 4 documents the data pipeline along with the alias-correction and PK-leakage discoveries. Section 5 presents the three audit findings with per-tier and per-class breakdowns. Section 6 discusses implications for clinical decision support and regulatory frameworks.
 
 ## Citation
 
