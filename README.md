@@ -2,21 +2,32 @@
 
 # Multi-task DDI Benchmark Audit for Tuberculosis-HIV Pharmacotherapy
 
-This project audits a multi-task drug-drug interaction (DDI) prediction benchmark for tuberculosis-HIV pharmacotherapy, built from DrugBank and DDInter. Across seven model variants, including a full GNN+PK model, three GNN ablations, and three feature-based baselines, the audit reveals three ways that standard benchmark assembly choices systematically disadvantage drugs central to global health.
+This project audits a multi-task drug-drug interaction (DDI) prediction benchmark for tuberculosis-HIV pharmacotherapy, built from DrugBank and DDInter. Across seven model variants, including a full 
+GNN+PK model, three GNN ablations, and three feature-based baselines, the audit reveals three ways that standard benchmark assembly choices systematically disadvantage drugs central to global health.
 
 ## About this project
 
-This is a final capstone project in AI in Healthcare at Johns Hopkins University, Baltimore, MD (Spring 2026). The paper uses the PMLR / MLHC 2026 template because the course assignment required it. **The work was not submitted to MLHC and has not been peer-reviewed.** The repository is shared as a portfolio artifact demonstrating a multi-task GNN and baseline implementation, rigorous statistical evaluation (bootstrap CIs, McNemar pairwise tests, calibration analysis), and an honest methodological audit that includes the discovery and correction of a label-leakage issue in the input features.
+This is a final capstone project in AI in Healthcare at Johns Hopkins University, Baltimore, MD (Spring 2026). The paper uses the PMLR / MLHC 2026 template because the course assignment required it. 
+**The work was not submitted to MLHC and has not been peer-reviewed.** The repository is shared as a portfolio artifact demonstrating a multi-task GNN and baseline implementation, rigorous statistical 
+evaluation (bootstrap CIs, McNemar pairwise tests, calibration analysis), and an honest methodological audit that includes the discovery and correction of a label-leakage issue in the input features.
 
 ## Findings
 
-**1. Cross-database name resolution silently omits drugs labeled with WHO international nonproprietary names.** Merging DDInter with DrugBank based on exact string matches removed 1,824 documented interactions, about 0.82% of the 222,383 DDInter records. This included all 284 pairs involving rifampin, the most clinically significant CYP3A4 inducer used in TB treatment. The discrepancy stems from structural differences: DDInter uses WHO INN names (`rifampicin`, `salbutamol`), whereas DrugBank uses American generic names (`rifampin`, `albuterol`). An alias mapping recovered four matchable mismatches with rifampicin, salbutamol, interferon alfa-2a, and a COVID-19 vaccine name variant, resolving all but 2 of the interactions initially dropped. Drugs registered by WHO INN are more likely to be affected.
+**1. Cross-database name resolution silently omits drugs labeled with WHO international nonproprietary names.** Merging DDInter with DrugBank based on exact string matches removed 1,824 documented interactions, 
+about 0.82% of the 222,383 DDInter records. This included all 284 pairs involving rifampin, the most clinically significant CYP3A4 inducer used in TB treatment. The discrepancy stems from structural differences, 
+DDInter uses WHO INN names (`rifampicin`, `salbutamol`), whereas DrugBank uses American generic names (`rifampin`, `albuterol`). An alias mapping recovered four matchable mismatches with rifampicin, salbutamol, 
+interferon alfa-2a, and a COVID-19 vaccine name variant, resolving all but 2 of the interactions initially dropped. Drugs registered by WHO INN are more likely to be affected.
 
-**2. Random pair-level splits with broad-pool negative sampling saturate the drug space and make cold-start evaluation structurally impossible.** Of 13,002 test pairs, 12,997 (99.96%) are warm-warm (both drugs appear in training), 5 are warm-cold, and 0 are cold-cold. The benchmark cannot answer whether a model trained on it generalizes to a novel drug. Newer agents in current WHO TB and HIV guidelines (delamanid, pretomanid, dolutegravir) lack sufficient test coverage under this design.
+**2. Random pair-level splits with broad-pool negative sampling saturate the drug space and make cold-start evaluation structurally impossible.** Of 13,002 test pairs, 12,997 (99.96%) are warm-warm (both drugs appear in training), 
+5 are warm-cold, and 0 are cold-cold. The benchmark cannot answer whether a model trained on it generalizes to a novel drug. Newer agents in current WHO TB and HIV guidelines (delamanid, pretomanid, dolutegravir) lack sufficient 
+test coverage under this design.
 
-**3. Aggregate accuracy masks architecture-specific failure modes in rare severity classes.** The complete GNN+PK model and the MLP ensemble display different F1 scores on the rare Minor class (0.51 vs 0.76), due to *opposite* mechanisms. GNN+PK features high recall but low precision for Minor (R = 0.88, P = 0.36), whereas the MLP exhibits high precision but lower recall (P = 0.87, R = 0.68). Bootstrap 95% confidence intervals for per-class precision do not overlap, indicating statistically distinct failure modes between the two architectures. In clinical use, they would produce qualitatively different alert behaviors despite similar benchmark performance.
+**3. Aggregate accuracy masks architecture-specific failure modes in rare severity classes.** The complete GNN+PK model and the MLP ensemble display different F1 scores on the rare Minor class (0.51 vs 0.76), due to *opposite* mechanisms. 
+GNN+PK features high recall but low precision for Minor (R = 0.88, P = 0.36), whereas the MLP exhibits high precision but lower recall (P = 0.87, R = 0.68). Bootstrap 95% confidence intervals for per-class precision do not overlap, indicating 
+statistically distinct failure modes between the two architectures. In clinical use, they would produce qualitatively different alert behaviors despite similar benchmark performance.
 
-**A methodological note.** During the audit, indirect label leakage in the pharmacokinetic feature vector was recognized and addressed. Pairs carrying a CYP-inducer flag were 2.2 times more likely to carry a CYP induction label, and pairs carrying a CYP-inhibitor flag were 2.5 times more likely to carry a CYP inhibition label, because both originate from the same DrugBank curation. Twenty of the original thirty PK columns were removed, and all reported results use the 10-dimensional leakage-corrected vector.
+**A methodological note.** During the audit, indirect label leakage in the pharmacokinetic feature vector was recognized and addressed. Pairs carrying a CYP-inducer flag were 2.2 times more likely to carry a CYP induction label, and pairs carrying 
+a CYP-inhibitor flag were 2.5 times more likely to carry a CYP inhibition label, because both originate from the same DrugBank curation. Twenty of the original thirty PK columns were removed, and all reported results use the 10-dimensional leakage-corrected vector.
 
 ## Headline results
 
@@ -32,11 +43,13 @@ Single fixed test set (n = 13,002). Baseline results represent the 5-fold cross-
 | PK-only                   | 0.635                    | 0.472                    | 0.828     | 0.823      | 0.106     |
 | Single-task               | 0.851                    | 0.727                    | 0.971     | N/A        | 0.009     |
 
-The MLP outperforms GNN+PK by 9.3 accuracy points and 14.8 macro-F1 points on the full test set. The difference is highly significant under McNemar (p < 10⁻⁶), with a paired-bootstrap 95% confidence interval of [0.087, 0.099]. The complete paper further details this with per-tier TB results, showing a sharp decline in calibration across all models on the small TB-relevant subgroups. Specifically, GNN+PK's ECE increases from 0.008 on the full test to 0.091 on first-line TB pairs and 0.135 on ARV co-administration pairs.
+The MLP outperforms GNN+PK by 9.3 accuracy points and 14.8 macro-F1 points on the full test set. The difference is highly significant under McNemar (p < 10⁻⁶), with a paired-bootstrap 95% confidence interval of [0.087, 0.099]. The complete paper further details 
+this with per-tier TB results, showing a sharp decline in calibration across all models on the small TB-relevant subgroups. Specifically, GNN+PK's ECE increases from 0.008 on the full test to 0.091 on first-line TB pairs and 0.135 on ARV co-administration pairs.
 
 ## Reproducing the results
 
-The repository has two source directories. `src/` contains the GNN, the shared scoring pipeline, and the audit modules, while `ablation and baseline/` contains the baseline classifiers and the GNN ablations. Each script resolves paths relative to itself, so the commands below assume your shell is in the script's directory.
+The repository has two source directories. `src/` contains the GNN, the shared scoring pipeline, and the audit modules, while `ablation and baseline/` contains the baseline classifiers and the GNN ablations. Each script resolves paths relative to itself, so the 
+commands below assume your shell is in the script's directory.
 
 ### Setup
 
@@ -120,7 +133,6 @@ python tb_analysis.py xgb
 ├── .gitignore
 ├── README.md
 ├── requirements.txt
-├── paper.pdf                          # Audit write-up (MLHC template, not submitted)
 ├── EDA/
 │   └── EDA.ipynb                      # Data preprocessing notebook (raw to processed)
 ├── src/                               # Core model + audit modules
@@ -169,17 +181,25 @@ python tb_analysis.py xgb
 
 ## Limitations
 
-This audit evaluates a single benchmark (DrugBank + DDInter). Cross-benchmark validation is needed before generalizing the findings. Mechanism labels are derived via regex pattern matching against DrugBank's free-text descriptions, and 19.1% of positive pairs match no keyword and are excluded from mechanism training, so the reported mechanism-head performance reflects the regex labels rather than ground-truth pharmacology.
+This audit evaluates a single benchmark (DrugBank + DDInter). Cross-benchmark validation is needed before generalizing the findings. Mechanism labels are derived via regex 
+pattern matching against DrugBank's free-text descriptions, and 19.1% of positive pairs match no keyword and are excluded from mechanism training, so the reported mechanism-head 
+performance reflects the regex labels rather than ground-truth pharmacology.
 
-Treating unlabeled drug pairs as negatives during training assumes a positive-unlabeled framing. Because DrugBank records only known interactions, any pair without a recorded interaction is treated as non-interacting. This may underestimate false negatives, particularly for less-studied drugs.
+Treating unlabeled drug pairs as negatives during training assumes a positive-unlabeled framing. Because DrugBank records only known interactions, any pair without a recorded interaction 
+is treated as non-interacting. This may underestimate false negatives, particularly for less-studied drugs.
 
-The TB cohort includes 18 drugs that passed the alias-corrected merge with sufficient test coverage. Newer agents such as delamanid, pretomanid, and dolutegravir are excluded due to insufficient test pairs, which is itself a manifestation of finding 2.
+The TB cohort includes 18 drugs that passed the alias-corrected merge with sufficient test coverage. Newer agents such as delamanid, pretomanid, and dolutegravir are excluded due to 
+insufficient test pairs, which is itself a manifestation of finding 2.
 
-The GNN encoder uses one-hot atom (49-dim) and bond (14-dim) features with no pretraining. Variants with pretrained encoders might shift accuracy and AUROC values but are unlikely to overturn the audit's three main conclusions. The fundamental representational asymmetry remains, because Morgan fingerprints encode 2,048 bits of substructural information directly, while the GNN must learn it from 104,011 training pairs.
+The GNN encoder uses one-hot atom (49-dim) and bond (14-dim) features with no pretraining. Variants with pretrained encoders might shift accuracy and AUROC values but are unlikely 
+to overturn the audit's three main conclusions. The fundamental representational asymmetry remains, because Morgan fingerprints encode 2,048 bits of substructural information directly, 
+while the GNN must learn it from 104,011 training pairs.
 
 ## Paper
 
-The full write-up is in [`paper.pdf`](paper.pdf). Section 4 documents the data pipeline along with the alias-correction and PK-leakage discoveries. Section 5 presents the three audit findings with per-tier and per-class breakdowns. Section 6 discusses implications for clinical decision support and regulatory frameworks.
+The full write-up is hosted on Hugging Face as [`paper.pdf`](https://huggingface.co/jsf3467v/multi-task-ddi-audit/blob/main/paper.pdf). Section 4 documents the data pipeline along with 
+the alias-correction and PK-leakage discoveries. Section 5 presents the three audit findings with per-tier and per-class breakdowns. Section 6 discusses implications for clinical decision 
+support and regulatory frameworks.
 
 ## Model checkpoints
 
@@ -201,4 +221,5 @@ This is unpublished course work. If you reference it, please use the following c
 
 ## Acknowledgements
 
-DrugBank (Wishart et al., 2018) and DDInter (Xiong et al., 2022) are the data sources. The audit framing builds on prior clinical ML benchmark critiques by Wong et al. (2021), Kapoor and Narayanan (2023), Huang et al. (2021), and Shen et al. (2025). Full references are in the paper.
+DrugBank (Wishart et al., 2018) and DDInter (Xiong et al., 2022) are the data sources. The audit framing builds on prior clinical ML benchmark critiques by Wong et al. (2021), Kapoor and Narayanan (2023), 
+Huang et al. (2021), and Shen et al. (2025). Full references are in the paper.
